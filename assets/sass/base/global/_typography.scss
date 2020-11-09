@@ -1,0 +1,68 @@
+$baseFontFamily: "Roboto", sans-serif;
+$light: 300;
+$roman: 400;
+$bold: 700;
+$black: 900;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $baseFontFamily;
+}
+a {
+  text-decoration: none;
+  transition: all 0.2s linear;
+  &:hover {
+    //color:$primary;
+  }
+}
+
+strong {
+  font-weight: $bold;
+}
+
+h1 {
+  font-size: rem(50);
+  font-weight: $bold;
+  @media (max-width: em(1199)) {
+    font-size: rem(38);
+  }
+  @media (max-width: em(610)) {
+    font-size: rem(32);
+  }
+}
+h2 {
+  font-size: rem(42);
+  font-weight: $bold;
+  @media (max-width: em(991)) {
+    font-size: rem(32);
+  }
+  @media (max-width: em(610)) {
+    font-size: rem(28);
+  }
+}
+h3 {
+  font-size: rem(24);
+  font-weight: $black;
+}
+h4 {
+  font-size: rem(22);
+  font-weight: $black;
+}
+
+p {
+    line-height: 1.9;
+    font-family: 'Merriweather', serif;
+}
+
+p.blog_header {
+    font-weight: 600;
+    font-size: rem(35);
+}
+
+p.blog {
+    margin-bottom: rem(25);
+}

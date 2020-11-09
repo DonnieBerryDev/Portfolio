@@ -1,0 +1,117 @@
+nav {
+    transition: 0.2s ease all;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    margin: 0 auto;
+    height: rem(100);
+    top: 0;
+    left: 0;
+    right: 0;
+    .container {
+        ul {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: rem(60);
+            max-width: 50%;
+
+            li {
+                padding: 10px 15px;
+                border-radius: 10px;
+                transition: 0.15s ease;
+
+                &:hover {
+                    background: lighten($mainPink, 20%);
+                    transition: 0.15s ease;
+                }
+
+                a {
+                    color: black;
+                    font-size: rem(20);
+                }
+            }
+        }
+    }
+}
+
+.navScrolled {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.05);
+    background: white;
+    transition: 0.2s ease all;
+}
+
+.active {
+    background: $mainPink;
+
+    &:hover {
+        background: $mainPink;
+    }
+}
+
+.landing {
+    position: relative;
+    .webdevsvg {
+        position: absolute;
+        right: rem(200);
+        bottom: rem(100);
+        img {
+            height: 30vh;
+        }
+    }
+    .landingContainer {
+        height: 100vh;
+        margin: 0 auto;
+        padding: 0 rem(25);
+        max-width: rem(1000);
+        display: flex;
+        align-content: center;
+        align-items: center;
+
+        .landingContent {
+            h1 {
+                margin-bottom: rem(15);
+                font-size: rem(80);
+            }
+
+            h5 {
+                font-size: rem(24);
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
