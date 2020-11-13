@@ -3,8 +3,8 @@
     "start": "./node_modules/.bin/gulp"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
     "babel-core": "^6.26.3",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -20,12 +20,11 @@
     "postcss-pxtorem": "^3.3.1"
   },
   "dependencies": {
-    "@babel/core": "^7.0.0",
     "babel-core": "^6.26.3",
     "gulp": "^3.8.11",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-sass": "^4.0.1",
-    "node-sass": "^4.13.0"
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
   }
 }

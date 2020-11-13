@@ -56,17 +56,35 @@ h2 {
 h3 {
     font-size: rem(24);
     font-weight: $black;
+
+    @media (max-width: em(991)) {
+        font-size: rem(21)
+    }
 }
 
 h4 {
     font-size: rem(22);
     font-weight: $black;
+
+    @media (max-width: em(991)) {
+        font-size: rem(19)
+    }
+}
+
+h5 {
+    @media (max-width: em(991)) {
+        font-size: rem(16)
+    }
 }
 
 p {
-    font-size: 21px;
+    font-size: rem(21);
     line-height: 1.9;
     font-family: 'Merriweather', serif;
+
+    @media (max-width: em(991)) {
+        font-size: rem(16)
+    }
 }
 
 span.italic {
@@ -84,10 +102,20 @@ span.large {
     font-weight: 800;
 }
 
+.extraMargin {
+    @media (max-width: em(991)) {
+        margin-bottom: rem(35);
+    }
+}
 
 p.blog_header {
     font-weight: 600;
     font-size: rem(35);
+
+    @media (max-width: em(991)) {
+        line-height: 1.4;
+        margin-bottom: rem(20)
+    }
 }
 
 p.blog_header_2 {
@@ -114,7 +142,11 @@ ul.blog {
         margin-bottom: rem(10);
         padding-left: 1.3em;
         line-height: 1.9;
-    font-family: 'Merriweather', serif;
+        font-family: 'Merriweather', serif;
+
+        @media (max-width: em(991)) {
+            font-size: rem(16);
+        }
     }
 
     li:before {
@@ -128,4 +160,18 @@ ul.blog {
         width: 1.3em;
         /* same as padding-left set on li */
     }
+}
+
+a.reference {
+    color: $mainPink;
+    background: lighten($mainPink, 25%);
+
+    &:hover {
+        background: darken($mainPink, 60%);
+    }
+}
+
+.extraMargin {
+    margin-bottom: rem(55);
+    display: block;
 }
