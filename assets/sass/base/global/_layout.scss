@@ -131,3 +131,16 @@ body {
         color: #E0B568;
     }
 }
+
+iframe {
+    margin-bottom: rem(30);
+}
+
+.blog_img {
+    width: 100%;
+    margin: rem(30) 0;
+    display: block;
+    img {
+        width: 100%;
+    }
+}

@@ -1,4 +1,5 @@
-$baseFontFamily: "Roboto", sans-serif;
+$baseFontFamily: "Roboto",
+sans-serif;
 $light: 300;
 $roman: 400;
 $bold: 700;
@@ -10,59 +11,121 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $baseFontFamily;
+    font-family: $baseFontFamily;
 }
+
 a {
-  text-decoration: none;
-  transition: all 0.2s linear;
-  &:hover {
-    //color:$primary;
-  }
+    text-decoration: none;
+    transition: all 0.2s linear;
+
+    &:hover {
+        //color:$primary;
+    }
 }
 
 strong {
-  font-weight: $bold;
+    font-weight: $bold;
 }
 
 h1 {
-  font-size: rem(50);
-  font-weight: $bold;
-  @media (max-width: em(1199)) {
-    font-size: rem(38);
-  }
-  @media (max-width: em(610)) {
-    font-size: rem(32);
-  }
+    font-size: rem(50);
+    font-weight: $bold;
+
+    @media (max-width: em(1199)) {
+        font-size: rem(38);
+    }
+
+    @media (max-width: em(610)) {
+        font-size: rem(32);
+    }
 }
+
 h2 {
-  font-size: rem(42);
-  font-weight: $bold;
-  @media (max-width: em(991)) {
-    font-size: rem(32);
-  }
-  @media (max-width: em(610)) {
-    font-size: rem(28);
-  }
+    font-size: rem(42);
+    font-weight: $bold;
+
+    @media (max-width: em(991)) {
+        font-size: rem(32);
+    }
+
+    @media (max-width: em(610)) {
+        font-size: rem(28);
+    }
 }
+
 h3 {
-  font-size: rem(24);
-  font-weight: $black;
+    font-size: rem(24);
+    font-weight: $black;
 }
+
 h4 {
-  font-size: rem(22);
-  font-weight: $black;
+    font-size: rem(22);
+    font-weight: $black;
 }
 
 p {
+    font-size: 21px;
     line-height: 1.9;
     font-family: 'Merriweather', serif;
 }
+
+span.italic {
+    font-style: italic;
+}
+
+span.bold {
+    font-weight: 600;
+}
+
+span.large {
+    font-size: rem(40);
+    display: block;
+    margin: rem(30) 0;
+    font-weight: 800;
+}
+
 
 p.blog_header {
     font-weight: 600;
     font-size: rem(35);
 }
 
+p.blog_header_2 {
+    font-weight: 600;
+    font-size: rem(26);
+    margin-bottom: rem(20);
+}
+
+p.blog_header_3 {
+    font-weight: 600;
+    font-size: rem(22);
+}
+
 p.blog {
     margin-bottom: rem(25);
+}
+
+ul.blog {
+    list-style: none;
+    padding: 0;
+    margin-bottom: rem(25);
+
+    li {
+        margin-bottom: rem(10);
+        padding-left: 1.3em;
+        line-height: 1.9;
+    font-family: 'Merriweather', serif;
+    }
+
+    li:before {
+        content: "\f058";
+        color: $mainPink;
+        /* FontAwesome Unicode */
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: -1.3em;
+        /* same as padding-left set on li */
+        width: 1.3em;
+        /* same as padding-left set on li */
+    }
 }
