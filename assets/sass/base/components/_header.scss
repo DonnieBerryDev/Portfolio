@@ -107,11 +107,19 @@ nav {
             h1 {
                 margin-bottom: rem(15);
                 font-size: rem(80);
+
+                @media (max-width: em(991)) {
+                    font-size: rem(50);
+                }
             }
 
             h5 {
                 font-size: rem(24);
                 line-height: 1.4;
+
+                @media (max-width: em(991)) {
+                    font-size: rem(18);
+                }
             }
         }
     }
