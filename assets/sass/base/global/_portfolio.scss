@@ -1,3 +1,8 @@
+body,
+html {
+    height: 100%;
+}
+
 body#portfolio {
     nav {
         ul {
@@ -10,7 +15,8 @@ body#portfolio {
     }
 
     .portfolio_landing {
-        height: 100vh;
+        position: relative;
+        height: 100%;
         width: 100%;
         background: radial-gradient(85% 85% at 50% 15%, #4B3278 0%, #241D4A 100%);
 
@@ -23,6 +29,9 @@ body#portfolio {
             justify-items: center;
             max-width: 1920px;
 
+            @media (max-width: em(991)) {
+                width: 100%;
+            }
 
             .intro_text {
                 height: 100%;
@@ -33,24 +42,55 @@ body#portfolio {
                 flex-direction: column;
 
                 &__header {
+                    @media (max-width: em(991)) {
+                        text-align: center;
+                    }
+
                     h1 {
                         font-size: rem(80);
                         color: white;
                         margin-bottom: rem(15);
+
+                        @media (max-width: em(991)) {
+                            font-size: rem(50);
+                        }
                     }
                 }
 
                 &__subheader {
+                    @media (max-width: em(991)) {
+                        text-align: center;
+                    }
+
                     h1 {
                         font-size: rem(80);
                         color: white;
                         margin-bottom: rem(40);
+
+
+                        @media (max-width: em(991)) {
+                            font-size: rem(50);
+                        }
+
+                        .emphasized {
+                            @media (max-width: em(991)) {
+                                background: none;
+                                padding: 0;
+                            }
+                        }
                     }
                 }
 
                 &__about {
                     max-width: 50%;
                     border-left: 3px solid $mainPink;
+                    padding-top: rem(10);
+
+                    @media (max-width: em(991)) {
+                        border-left: none;
+                        border-top: 3px solid $mainPink;
+                        max-width: 100%;
+                    }
 
                     h5 {
                         display: block;
@@ -59,12 +99,24 @@ body#portfolio {
                         font-size: rem(30);
                         font-weight: 500;
                         line-height: 1.2;
+
+                        @media (max-width: em(991)) {
+                            font-size: rem(20);
+                            margin-left: 0;
+                            line-height: 1.4;
+                        }
                     }
                 }
 
                 &__download {
                     margin-top: rem(25);
                     margin-left: rem(25);
+
+                    @media (max-width: em(991)) {
+                        margin-left: 0;
+                        margin: 0 auto;
+                        margin-top: rem(35);
+                    }
 
                     button {
                         &:hover {

@@ -9,5 +9,11 @@ body#portfolio {
         color: white;
         font-weight: 600;
         cursor: pointer;
+        transition: 0.4s ease-in-out all;
+
+        &:hover {
+            transition: 1s ease-in-out all;
+            background: linear-gradient(87.89deg, #DD2E9F 0%, #782098 100%);
+        }
     }
 }
