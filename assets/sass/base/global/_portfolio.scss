@@ -1,0 +1,85 @@
+body#portfolio {
+    nav {
+        ul {
+            li {
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .portfolio_landing {
+        height: 100vh;
+        width: 100%;
+        background: radial-gradient(85% 85% at 50% 15%, #4B3278 0%, #241D4A 100%);
+
+        .mainContainer {
+            height: 100vh;
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            max-width: 1920px;
+
+
+            .intro_text {
+                height: 100%;
+                display: flex;
+                text-align: left;
+                width: 100%;
+                justify-content: center;
+                flex-direction: column;
+
+                &__header {
+                    h1 {
+                        font-size: rem(80);
+                        color: white;
+                        margin-bottom: rem(15);
+                    }
+                }
+
+                &__subheader {
+                    h1 {
+                        font-size: rem(80);
+                        color: white;
+                        margin-bottom: rem(40);
+                    }
+                }
+
+                &__about {
+                    max-width: 50%;
+                    border-left: 3px solid $mainPink;
+
+                    h5 {
+                        display: block;
+                        margin-left: rem(25);
+                        color: white;
+                        font-size: rem(30);
+                        font-weight: 500;
+                        line-height: 1.2;
+                    }
+                }
+
+                &__download {
+                    margin-top: rem(25);
+                    margin-left: rem(25);
+
+                    button {
+                        &:hover {
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.emphasized {
+    background: #2B010A;
+    color: $mainPink;
+    padding: rem(2) rem(15);
+    border-radius: 20px;
+}
