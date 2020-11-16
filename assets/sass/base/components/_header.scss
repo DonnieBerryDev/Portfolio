@@ -58,8 +58,13 @@ nav {
     }
 }
 
+.mainContainer {
+    height: 100%;
+}
+
 .landing {
     position: relative;
+    height: 100%;
 
     .webdevsvg {
         position: absolute;
@@ -95,7 +100,7 @@ nav {
     }
 
     .landingContainer {
-        height: 100vh;
+        height: 100%;
         margin: 0 auto;
         padding: 0 rem(25);
         max-width: rem(1000);
@@ -297,7 +302,6 @@ nav {
     z-index: 9999999;
     transition: 0.2s ease;
     overflow: hidden;
-
     @media (min-width: em(991)) {
         display: none;
     }
@@ -346,4 +350,11 @@ ul.hamburgerMenu {
             justify-content: center;
         }
     }
+}
+
+
+.navScrolled {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);
+    background: white;
+    transition: 0.2s ease all;
 }
