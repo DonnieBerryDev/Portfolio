@@ -1,361 +1,351 @@
 nav {
-    transition: 0.2s ease all;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 99999;
-    margin: 0 auto;
-    height: rem(100);
-    top: 0;
-    left: 0;
-    right: 0;
+  transition: 0.2s ease all;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  margin: 0 auto;
+  height: rem(100);
+  top: 0;
+  left: 0;
+  right: 0;
 
-    @media (max-width: em(991)) {
-        display: none;
-    }
+  @media (max-width: em(991)) {
+    display: none;
+  }
 
-    .container {
-        ul {
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: rem(60);
-            max-width: 50%;
+  .container {
+    ul {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: rem(60);
+      max-width: 50%;
 
-            li {
-                padding: 10px 15px;
-                border-radius: 10px;
-                transition: 0.15s ease;
+      li {
+        padding: 10px 15px;
+        border-radius: 10px;
+        transition: 0.15s ease;
 
-                &:hover {
-                    background: lighten($mainPink, 20%);
-                    transition: 0.15s ease;
-                }
-
-                a {
-                    color: black;
-                    font-size: rem(20);
-                }
-            }
+        &:hover {
+          background: lighten($mainPink, 20%);
+          transition: 0.15s ease;
         }
+
+        a {
+          color: black;
+          font-size: rem(20);
+        }
+      }
     }
+  }
 }
 
 .navScrolled {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);
-    background: white;
-    transition: 0.2s ease all;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);
+  background: white;
+  transition: 0.2s ease all;
 }
 
 li.active {
-    background: $mainPink;
+  background: $mainPink;
 
-    &:hover {
-        background: $mainPink;
-    }
+  &:hover {
+    background: $mainPink;
+  }
 }
 
 .mainContainer {
-    height: 100%;
+  height: 100%;
 }
 
 .landing {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
 
-    .webdevsvg {
-        position: absolute;
-        right: rem(200);
-        bottom: rem(100);
+  .webdevsvg {
+    position: absolute;
+    right: rem(200);
+    bottom: rem(100);
+
+    @media (max-width: em(991)) {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    img {
+      height: 30vh;
+
+      @media (max-width: em(991)) {
+        height: 30vh;
+      }
+
+      @media (max-width: em(750)) {
+        height: 30vh;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      @media (max-width: em(500)) {
+        height: 17vh;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .landingContainer {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 rem(25);
+    max-width: rem(1000);
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    .landingContent {
+      h1 {
+        margin-bottom: rem(15);
+        font-size: rem(80);
 
         @media (max-width: em(991)) {
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
+          font-size: rem(50);
         }
+      }
 
-        img {
-            height: 30vh;
+      h5 {
+        font-size: rem(24);
+        line-height: 1.4;
 
-            @media (max-width: em(991)) {
-                height: 30vh;
-            }
-
-            @media (max-width: em(750)) {
-                height: 30vh;
-                width: 100%;
-                margin: 0 auto;
-            }
-
-            @media (max-width: em(500)) {
-                height: 17vh;
-                width: 100%;
-                margin: 0 auto;
-            }
+        @media (max-width: em(991)) {
+          font-size: rem(18);
         }
+      }
     }
-
-    .landingContainer {
-        height: 100%;
-        margin: 0 auto;
-        padding: 0 rem(25);
-        max-width: rem(1000);
-        display: flex;
-        align-content: center;
-        align-items: center;
-
-        .landingContent {
-            h1 {
-                margin-bottom: rem(15);
-                font-size: rem(80);
-
-                @media (max-width: em(991)) {
-                    font-size: rem(50);
-                }
-            }
-
-            h5 {
-                font-size: rem(24);
-                line-height: 1.4;
-
-                @media (max-width: em(991)) {
-                    font-size: rem(18);
-                }
-            }
-        }
-    }
+  }
 }
 
 .wave {
-    animation-name: wave-animation;
-    /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;
-    /* Change to speed up or slow down */
-    animation-iteration-count: infinite;
-    /* Never stop waving :) */
-    transform-origin: 70% 70%;
-    /* Pivot around the bottom-left palm */
-    display: inline-block;
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
 }
 
 @keyframes wave-animation {
-    0% {
-        transform: rotate(0.0deg)
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    10% {
-        transform: rotate(14.0deg)
-    }
+  10% {
+    transform: rotate(14deg);
+  }
 
-    /* The following five values can be played with to make the waving more or less extreme */
-    20% {
-        transform: rotate(-8.0deg)
-    }
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
 
-    30% {
-        transform: rotate(14.0deg)
-    }
+  30% {
+    transform: rotate(14deg);
+  }
 
-    40% {
-        transform: rotate(-4.0deg)
-    }
+  40% {
+    transform: rotate(-4deg);
+  }
 
-    50% {
-        transform: rotate(10.0deg)
-    }
+  50% {
+    transform: rotate(10deg);
+  }
 
-    60% {
-        transform: rotate(0.0deg)
-    }
+  60% {
+    transform: rotate(0deg);
+  }
 
-    /* Reset for the last half to pause */
-    100% {
-        transform: rotate(0.0deg)
-    }
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #b61924;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
-
-
-
-
-
 
 #hamburger_icon span {
-    display: block;
-    position: absolute;
-    height: 9px;
-    width: 100%;
-    background: white;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
+  display: block;
+  position: absolute;
+  height: 4.5px;
+  width: 100%;
+  background: white;
+  border-radius: 4.5px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
-
 
 .hamburger_container {
-    padding: rem(10);
-    background: $mainPink;
-    position: fixed;
-    left: rem(25);
-    top: rem(25);
-    z-index: 99999999;
-    border-radius: 10px;
+  padding: rem(10);
+  background: $mainPink;
+  position: fixed;
+  left: rem(25);
+  top: rem(25);
+  z-index: 99999999;
+  border-radius: 10px;
 
-    @media (min-width: em(991)) {
-        display: none;
-    }
+  @media (min-width: em(991)) {
+    display: none;
+  }
 }
 
-
 #hamburger_icon {
-    background: $mainPink;
-    padding: rem(20);
-    display: block;
-    width: 60px;
-    height: 45px;
-    position: relative;
+  background: $mainPink;
+  padding: rem(10);
+  display: block;
+  width: 30px;
+  height: 22.5px;
+  position: relative;
 
-    z-index: 99999999;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    cursor: pointer;
+  z-index: 99999999;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 
-    @media (min-width: em(991)) {
-        display: none;
-    }
+  @media (min-width: em(991)) {
+    display: none;
+  }
 }
 
 #hamburger_icon span:nth-child(1) {
-    top: 0px;
+  top: 0px;
 }
 
 #hamburger_icon span:nth-child(2),
 #hamburger_icon span:nth-child(3) {
-    top: 18px;
+  top: 9px;
 }
 
 #hamburger_icon span:nth-child(4) {
-    top: 36px;
+  top: 18px;
 }
 
 #hamburger_icon.open span:nth-child(1) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
+  top: 9px;
+  width: 0%;
+  left: 50%;
 }
 
 #hamburger_icon.open span:nth-child(2) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 #hamburger_icon.open span:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 #hamburger_icon.open span:nth-child(4) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
+  top: 18px;
+  width: 0%;
+  left: 50%;
 }
 
 .hamburger {
-    background: #333333;
-    left: -200vw;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 9999999;
-    transition: 0.2s ease;
-    overflow: hidden;
+  background: #333333;
+  left: -200vw;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999999;
+  transition: 0.2s ease;
+  overflow: hidden;
 
-    @media (min-width: em(991)) {
-        display: none;
-    }
+  @media (min-width: em(991)) {
+    display: none;
+  }
 
-    ul {}
+  ul {
+  }
 }
 
-
-
 .activeMenu {
-    transition: 0.2s ease;
-    left: 0;
-    display: block;
+  transition: 0.2s ease;
+  left: 0;
+  display: block;
 }
 
 ul.hamburgerMenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-top: rem(150);
-    height: calc(100vh - 300px);
-    z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: rem(150);
+  height: calc(100vh - 300px);
+  z-index: 999999;
+  width: 100%;
+
+  li.hamburgerMenu {
+    color: white;
+    border-bottom: 1px solid #111111;
+    height: 100%;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 
-
-    li.hamburgerMenu {
-        color: white;
-        border-bottom: 1px solid #111111;
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-
-        &:first-of-type {
-            border-top: 1px solid #111111;
-        }
-
-        a {
-            align-items: center;
-            text-align: center;
-            display: flex;
-            height: 100%;
-            width: 100%;
-            color: white;
-            justify-content: center;
-        }
+    &:first-of-type {
+      border-top: 1px solid #111111;
     }
+
+    a {
+      align-items: center;
+      text-align: center;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      color: white;
+      justify-content: center;
+    }
+  }
 }
 
-
 .navScrolled {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);
-    background: white;
-    transition: 0.2s ease all;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);
+  background: white;
+  transition: 0.2s ease all;
 }

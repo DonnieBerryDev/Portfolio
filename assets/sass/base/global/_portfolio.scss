@@ -11,71 +11,115 @@ body#portfolio {
   overflow: auto;
   #projects {
     margin-bottom: rem(500);
+    .smallContainer {
+      max-width: rem(950);
+    }
     .container {
       padding: 0 rem(25);
+      .projects_intro {
+        margin-bottom: rem(100);
+        @media (max-width: em(882)) {
+          margin-bottom: rem(0);
+          margin-top: rem(25);
+        }
+        h1 {
+          @media (max-width: em(882)) {
+            text-align: center;
+            line-height: 1.4;
+          }
+        }
+      }
+
       .project_list {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
         flex-grow: inherit;
         .project {
-          margin: rem(10);
-          background: darken(#fff, 5%);
-          width: rem(400);
-          border-radius: 30px 30px 0 0;
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
-            0 3px 6px rgba(0, 0, 0, 0.23);
-          &_image {
-            height: 200px;
-            background-size: cover;
-            border-radius: 30px 30px 0 0;
-            img {
-              height: 100%;
-            }
+          width: 100%;
+          margin-bottom: rem(25);
+          padding: rem(50);
+          box-shadow: rgba(0, 0, 0, 0.06) 0px 9px 24px;
+          background: white;
+          height: rem(380);
+          display: flex;
+          @media (max-width: em(882)) {
+            margin-bottom: rem(50);
+            flex-direction: column;
+            height: auto;
           }
-          .project_content {
-            padding: rem(20);
-
-            .project_header {
+          @media (max-width: em(536)) {
+            padding: rem(50) rem(20);
+          }
+          &_content {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding-right: rem(35);
+            @media (max-width: em(882)) {
+              order: 1;
+              width: 100%;
+              padding-right: 0;
+            }
+            &__header {
               margin-bottom: rem(20);
               h5 {
-                color: $mainPink;
                 font-weight: 600;
+                font-size: rem(27);
               }
             }
-            .project_desc {
-              margin-bottom: rem(25);
+
+            &__desc {
               p {
+                font-size: rem(16);
+                line-height: 2;
                 font-family: "Roboto", sans-serif;
-                line-height: 1.8;
+              }
+              @media (max-width: em(882)) {
+                margin-bottom: rem(25);
               }
             }
-            .project_lang {
-              display: flex;
-              justify-content: center;
+            &__skills {
+              margin-top: auto;
+              margin-bottom: rem(10);
             }
-
-            .project_buttons {
+            &__buttons {
               display: flex;
-              justify-content: center;
-              overflow: hidden;
-              margin-top: rem(15);
-
-              &__live {
-                position: relative;
-                margin-right: rem(10);
-              }
-
-              &__github {
-                position: relative;
-                margin-left: rem(10);
-              }
+            }
+          }
+          &_image {
+            width: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            @media (max-width: em(882)) {
+              margin-bottom: rem(50);
+              order: 0;
+              width: 100%;
+              background-size: cover;
+              border-radius: 0;
+              min-height: 250px;
+              max-height: 300px;
             }
           }
         }
       }
     }
   }
+
+  .marginRight {
+    margin-right: rem(15);
+  }
+
+  .gif_tweet {
+    background-image: url(../../../../assets/img/gif-tweet.gif);
+  }
+
+  .gif_mimram {
+    background-image: url(../../../../assets/img/gif-mimram.gif);
+  }
+
   .landing {
     position: relative;
     z-index: 999;
@@ -96,6 +140,17 @@ body#portfolio {
           margin-bottom: rem(25);
           h1 {
             font-size: rem(70);
+            @media (max-width: em(1148)) {
+              font-size: rem(60);
+            }
+
+            @media (max-width: em(998)) {
+              font-size: rem(50);
+            }
+
+            @media (max-width: em(882)) {
+              text-align: center;
+            }
           }
         }
         &__sub {
@@ -103,10 +158,16 @@ body#portfolio {
           border-left: 5px solid $mainPink;
           padding-left: rem(20);
           line-height: 1.3;
+          @media (max-width: em(830)) {
+            max-width: 100%;
+          }
           h4 {
             font-size: rem(30);
             font-weight: 500;
             color: lighten(#000, 25%);
+            @media (max-width: em(690)) {
+              font-size: rem(20);
+            }
           }
         }
       }
@@ -136,9 +197,9 @@ body#portfolio {
   display: inline-block;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+  font-family: Fira Code, Camphor, Open Sans, Segoe UI, sans-serif;
   font-size: rem(12);
-  font-weight: 600;
+  font-weight: 400;
   color: #525f7f;
 }
 
@@ -148,4 +209,12 @@ body#portfolio {
 
 .img_soon {
   background: white;
+}
+
+.breakLine {
+  @media (max-width: em(882)) {
+    display: block;
+    padding: rem(20) rem(10);
+    margin-top: rem(20);
+  }
 }

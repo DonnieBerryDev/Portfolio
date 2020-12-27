@@ -28,22 +28,13 @@ body#portfolio {
   overflow: hidden;
   height: 32px;
   width: 120px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  transition: 0.3s all ease;
   &:hover {
     cursor: pointer;
     color: white;
-    transition: 0.2s all ease;
+    transition: 0.3s all ease;
+    background: $mainPink;
   }
-}
-
-.projectBtn:hover + .hoverBlock {
-  top: 0px;
-  transition: 0.2s all;
-}
-
-.hoverBlock {
-  position: absolute;
-  top: 35px;
-  height: 100%;
-  width: 100%;
-  background: $mainPink;
 }

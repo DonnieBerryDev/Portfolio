@@ -20,20 +20,14 @@
       integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css"
-      integrity="sha512-xbp9DExL/1FLDKhQIJNwoCaBjPytQcPMg82UsbBq02kckLcVzQms0+Ot54jXwuBjR6M91vaYHSmqrZlQ/nOEAQ=="
-      crossorigin="anonymous"
     />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js"
-      integrity="sha512-FcXc9c211aHVJEHxoj2fNFeT8+wUESf/4mUDIR7c31ccLF3Y6m+n+Wsoq4dp2sCnEEDVmjhuXX6TfYNJO6AG6A=="
       crossorigin="anonymous"
     ></script>
   </head>
@@ -71,13 +65,16 @@
         <div class="landing_text">
           <div class="landing_text__header">
             <h1>
-              I am a <span class="emphasized">Junior Front End Developer</span>
+              I am a
+              <span class="emphasized breakLine"
+                >Junior Front End Developer</span
+              >
             </h1>
           </div>
           <div class="landing_text__sub">
             <h4>
               I’m an aspiring developer looking to complete my degree and break
-              into my first full-time role .
+              into my first full-time role.
             </h4>
           </div>
         </div>
@@ -85,62 +82,66 @@
     </div>
 
     <div id="projects">
-      <div class="container">
+      <div class="container smallContainer">
+        <div class="projects_intro">
+          <h1>
+            Here are some <span class="emphasized">projects</span> I have worked
+            on:
+          </h1>
+        </div>
         <div class="project_list">
           <div class="project">
-            <div class="project_image img_tweetgenerator"></div>
             <div class="project_content">
-              <div class="project_header">
+              <div class="project_content__header">
                 <h5>Tweet Generator</h5>
               </div>
-              <div class="project_desc">
+              <div class="project_content__desc">
                 <p>
                   This is my first full React.js project. It uses state
                   management and multiple components to track user input and to
                   generate a fake tweet.
                 </p>
               </div>
-              <div class="project_lang">
+
+              <div class="project_content__skills">
                 <span class="lang">HTML</span>
                 <span class="lang">SASS</span>
                 <span class="lang">JAVASCRIPT</span>
                 <span class="lang">REACT.JS</span>
               </div>
-              <div class="project_buttons">
-                <div class="project_buttons__live">
-                  <button href="#" class="projectBtn">Live Site</button>
-                  <div class="hoverBlock"></div>
-                </div>
-                <div class="project_buttons__github">
-                  <button href="#" class="projectBtn">Github</button>
-                  <div class="hoverBlock"></div>
-                </div>
+              <div class="project_content__buttons">
+                <button class="projectBtn marginRight">Live Site</button>
+                <button class="projectBtn">Github</button>
               </div>
             </div>
+            <div class="project_image gif_tweet"></div>
           </div>
 
           <div class="project">
-            <div class="project_image img_soon"></div>
             <div class="project_content">
-              <div class="project_header">
-                <h5>Not Created Yet</h5>
+              <div class="project_content__header">
+                <h5>Mimram Construction</h5>
               </div>
-              <div class="project_desc">
-                <p>This is a empty slot for my next project.</p>
+              <div class="project_content__desc">
+                <p>
+                  This is my first full freelance project. It is multiple pages
+                  long and it takes advantage of multiple languages and some
+                  JQuery plugins.
+                </p>
               </div>
-            </div>
-          </div>
 
-          <div class="project">
-            <div class="project_image img_soon"></div>
-            <div class="project_content">
-              <div class="project_header">
-                <h5>Not Created Yet</h5>
+              <div class="project_content__skills">
+                <span class="lang">HTML</span>
+                <span class="lang">SASS</span>
+                <span class="lang">JAVASCRIPT</span>
+                <span class="lang">JQuery</span>
               </div>
-              <div class="project_desc">
-                <p>This is a empty slot for my next project.</p>
+              <div class="project_content__buttons">
+                <button class="projectBtn marginRight">Live Site</button>
+                <button class="projectBtn">Github</button>
               </div>
             </div>
+            <div class="project_image gif_mimram"></div>
           </div>
         </div>
       </div>
