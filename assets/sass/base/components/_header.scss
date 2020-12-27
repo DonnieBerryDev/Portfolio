@@ -50,7 +50,7 @@ nav {
     transition: 0.2s ease all;
 }
 
-.active {
+li.active {
     background: $mainPink;
 
     &:hover {
@@ -302,6 +302,7 @@ nav {
     z-index: 9999999;
     transition: 0.2s ease;
     overflow: hidden;
+
     @media (min-width: em(991)) {
         display: none;
     }

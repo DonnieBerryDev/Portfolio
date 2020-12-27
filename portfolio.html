@@ -1,62 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Home</title>
     <meta name="description" content="Portfolio" />
     <meta name="author" content="SitePoint" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
     <link rel="stylesheet" href="dist/css/main.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+      integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css"
+      integrity="sha512-xbp9DExL/1FLDKhQIJNwoCaBjPytQcPMg82UsbBq02kckLcVzQms0+Ot54jXwuBjR6M91vaYHSmqrZlQ/nOEAQ=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js"
+      integrity="sha512-FcXc9c211aHVJEHxoj2fNFeT8+wUESf/4mUDIR7c31ccLF3Y6m+n+Wsoq4dp2sCnEEDVmjhuXX6TfYNJO6AG6A=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body id="portfolio">
+  <body id="portfolio">
     <div class="hamburger_container">
-        <div id="hamburger_icon">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+      <div id="hamburger_icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <div class="hamburger">
-        <ul class="hamburgerMenu">
-            <li class="hamburgerMenu"><a href="index">home</a></li>
-            <li class="hamburgerMenu"><a href="uni">university work</a></li>
-            <li class="hamburgerMenu"><a href="portfolio">portfolio</a></li>
-            <li class="hamburgerMenu"><a href="#">contact</a></li>
-        </ul>
+      <ul class="hamburgerMenu">
+        <li class="hamburgerMenu"><a href="index">home</a></li>
+        <li class="hamburgerMenu"><a href="uni">university work</a></li>
+        <li class="hamburgerMenu"><a href="portfolio">portfolio</a></li>
+        <li class="hamburgerMenu"><a href="#">contact</a></li>
+      </ul>
     </div>
     <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index">home</a></li>
-                <li><a href="uni">university work</a></li>
-                <li class="active"><a href="portfolio">portfolio</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-        </div>
+      <div class="container">
+        <ul>
+          <li><a href="index">home</a></li>
+          <li><a href="uni">university work</a></li>
+          <li class="active"><a href="portfolio">portfolio</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <div class="portfolio_landing">
-        <div class="mainContainer">
-            <div class="intro_text">
-                <div class="intro_text__header">
-                    <h1>Hi, I'm Donnie</h1>
-                </div>
-                <div class="intro_text__subheader">
-                    <h1>I'm a <span class="emphasized">Junior Front End Developer</span></h1>
-                </div>
-                <div class="intro_text__about">
-                    <h5>I’m an aspiring developer looking to complete my degree and break into my first full-time role</h5>
-                </div>
-                <div class="intro_text__download">
-                    <button class="generic">Download My CV</button>
-                </div>
-            </div>
+    <div class="landing">
+      <div id="landing_square"></div>
+      <div class="container middle">
+        <div class="landing_text">
+          <div class="landing_text__header">
+            <h1>
+              I am a <span class="emphasized">Junior Front End Developer</span>
+            </h1>
+          </div>
+          <div class="landing_text__sub">
+            <h4>
+              I’m an aspiring developer looking to complete my degree and break
+              into my first full-time role .
+            </h4>
+          </div>
         </div>
+      </div>
     </div>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+
+    <div id="projects">
+      <div class="container">
+        <div class="project_list">
+          <div class="project">
+            <div class="project_image img_tweetgenerator"></div>
+            <div class="project_content">
+              <div class="project_header">
+                <h5>Tweet Generator</h5>
+              </div>
+              <div class="project_desc">
+                <p>
+                  This is my first full React.js project. It uses state
+                  management and multiple components to track user input and to
+                  generate a fake tweet.
+                </p>
+              </div>
+              <div class="project_lang">
+                <span class="lang">HTML</span>
+                <span class="lang">SASS</span>
+                <span class="lang">JAVASCRIPT</span>
+                <span class="lang">REACT.JS</span>
+              </div>
+              <div class="project_buttons">
+                <div class="project_buttons__live">
+                  <button href="#" class="projectBtn">Live Site</button>
+                  <div class="hoverBlock"></div>
+                </div>
+                <div class="project_buttons__github">
+                  <button href="#" class="projectBtn">Github</button>
+                  <div class="hoverBlock"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project_image img_soon"></div>
+            <div class="project_content">
+              <div class="project_header">
+                <h5>Not Created Yet</h5>
+              </div>
+              <div class="project_desc">
+                <p>This is a empty slot for my next project.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project_image img_soon"></div>
+            <div class="project_content">
+              <div class="project_header">
+                <h5>Not Created Yet</h5>
+              </div>
+              <div class="project_desc">
+                <p>This is a empty slot for my next project.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="assets/js/main.js"></script>
-</body></html>
+  </body>
+</html>

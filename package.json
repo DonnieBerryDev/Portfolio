@@ -21,8 +21,10 @@
   },
   "dependencies": {
     "babel-core": "^6.26.3",
-    "gulp": "^3.8.11",
+    "fullpage.js": "^3.0.9",
+    "gulp": "^3.9.1",
     "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.1.0",
     "node-sass": "^4.14.1"
