@@ -363,6 +363,9 @@ body {
   bottom: -55px;
   z-index: 999999;
   width: 100%;
+  @media (min-width: em(991)) {
+    display: none;
+  }
   .bottom_nav_bar {
     background-color: #eee;
     width: 100%;

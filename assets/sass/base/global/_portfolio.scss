@@ -61,6 +61,12 @@ body#portfolio {
               width: 100%;
               padding-right: 0;
             }
+            &_status {
+              margin-bottom: rem(15);
+              h5 {
+                font-size: rem(12);
+              }
+            }
             &__header {
               margin-bottom: rem(20);
               h5 {
@@ -217,4 +223,14 @@ body#portfolio {
     padding: rem(20) rem(10);
     margin-top: rem(20);
   }
+}
+
+.complete {
+  color: green;
+  font-weight: 600;
+}
+
+.incomplete {
+  color: red;
+  font-weight: 600;
 }
