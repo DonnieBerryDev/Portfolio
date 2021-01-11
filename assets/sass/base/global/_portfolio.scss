@@ -37,7 +37,7 @@ body#portfolio {
         flex-grow: inherit;
         .project {
           width: 100%;
-          margin-bottom: rem(25);
+          margin-bottom: rem(100);
           padding: rem(50);
           box-shadow: rgba(0, 0, 0, 0.06) 0px 9px 24px;
           background: white;
@@ -116,6 +116,10 @@ body#portfolio {
 
   .marginRight {
     margin-right: rem(15);
+  }
+
+  .gif_colourpicker {
+    background-image: url(../../../../assets/img/gif-colourpicker.gif);
   }
 
   .gif_tweet {

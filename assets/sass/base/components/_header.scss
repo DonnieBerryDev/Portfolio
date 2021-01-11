@@ -323,6 +323,7 @@ ul.hamburgerMenu {
   height: calc(100vh - 300px);
   z-index: 999999;
   width: 100%;
+  overflow: hidden;
 
   li.hamburgerMenu {
     color: white;
