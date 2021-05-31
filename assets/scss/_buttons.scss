@@ -1,0 +1,78 @@
+.btn-main {
+    display: inline-block;
+    text-transform: uppercase;
+    color: $clr-light;
+    text-decoration: none;
+    border: 1px solid $clr-light;
+    padding: rem(10) rem(55);
+    border-radius: 500px;
+    font-size: rem(14);
+    font-weight: 500;
+    letter-spacing: 1.6px;
+
+    &:hover {
+        background: #ffffff10;
+        transition: 0.3s all ease;
+    }
+}
+
+.btn-white {
+    @extend .btn-main;
+    padding: rem(10) rem(20);
+    background: #fff;
+    color: black;
+    font-size: rem(14);
+    font-weight: 500;
+
+    &:hover {
+        background: #f1f1f1;
+        transition: 0.3s all ease;
+    }
+}
+
+.btn-alt {
+    @extend .btn-main;
+    border: 1px solid #ccc;
+    padding: rem(5) rem(15);
+
+    img {
+        max-height: 20px;
+    }
+
+    &:hover {
+        background: #FFFFFF10;
+        transition: 0.3s all ease;
+    }
+}
+
+.btn-alt--dark {
+    @extend .btn-main;
+    border: 1px solid #ccc;
+    padding: rem(5) rem(15);
+
+    img {
+        max-height: 20px;
+    }
+
+    &:hover {
+        background: #00000010;
+        transition: 0.3s all ease;
+    }
+}
+
+.btn-footer {
+    @extend .btn-main;
+    font-size: rem(12);
+    font-weight: 600;
+    padding: rem(13) rem(27);
+    color: black;
+    text-transform: uppercase;
+    border: 1px solid #d9d9d9;
+    letter-spacing: 1.6px;
+    margin-right: rem(5);
+
+    &:hover {
+        background: #00000010;
+        transition: 0.3s all ease;
+    }
+}

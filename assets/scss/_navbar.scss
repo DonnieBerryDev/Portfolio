@@ -1,0 +1,211 @@
+nav {
+    background: #fff;
+    padding: rem(25) 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    animation: fade-in;
+    animation-duration: 1.2s;
+    box-shadow: none;
+    transition: 0.4s all ease-in-out;
+
+
+}
+
+.nav {
+    &_logo {
+        max-height: 100%;
+        max-width: 230px;
+
+        @media only screen and (max-width: 661px) {
+            max-width: 150px;
+        }
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+
+    &_menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+#navOpen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0vh;
+    opacity: 0;
+    width: 100%;
+    z-index: 1;
+    transition: 0.3s opacity ease 0s, 0s height ease 0.3s, 0.3s background ease 0s;
+
+    .container-main {
+        @media only screen and (max-width: 991px) {
+            flex-direction: row;
+            justify-content: flex-start !important;
+            flex-wrap: wrap;
+        }
+    }
+
+    #navImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+
+        img {
+            height: 91%;
+            max-width: 100%;
+        }
+    }
+
+    .navigation_links {
+        display: flex;
+        width: rem(300);
+
+        @media only screen and (max-width: 991px) {
+            margin-right: initial;
+            width: 100%;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                margin-bottom: rem(15);
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: rem(30)
+                }
+            }
+        }
+    }
+
+    .container-main {
+        padding-top: 20vh;
+        display: flex;
+        justify-content: flex-end;
+
+
+        .navList {
+            display: flex;
+            flex-direction: column;
+            width: 39%;
+
+            @media only screen and (max-width: 991px) {
+                width: 100%;
+            }
+
+            // &_header {
+            //     color: white;
+            //     border-bottom: 1px solid #fff;
+            //     padding-bottom: rem(30);
+
+            //     @media only screen and (max-width: 991px) {
+            //         border-bottom: 0;
+            //     }
+
+            //     h3 {
+            //         font-size: rem(30);
+            //         font-weight: 400;
+            //     }
+            // }
+
+            &_options {
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+
+                    li {
+                        &:first-child {
+                            padding-bottom: rem(30);
+                            border-bottom: 1px solid #ffffff50;
+                            margin-bottom: rem(30);
+                        }
+
+                        margin-bottom: rem(15);
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: rem(30);
+                            opacity: 0.3;
+                            transition: 0.3s all ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navOpened {
+    height: 100vh !important;
+    opacity: 1 !important;
+    transition: 0.3s opacity ease 0s, 0s height ease 0s, 0.3s background ease 0s !important;
+}
+
+.navBlack,
+.navBlue {
+    // transition: 0.3s all ease !important;
+
+}
+
+.navBlue {
+    background: #3487c3;
+}
+
+.navBlack {
+    background: #161616;
+}
+
+.navRed {
+    background: #a51e29;
+}
+
+.navGreen {
+    background: #128973;
+}
+
+.navOrange {
+    background: #c15436;
+}
+
+.hideNav {
+    display: none !important;
+    transition: 0s display ease 0.3s !important;
+}
+
+.hideNavItem {
+    display: none !important;
+    opacity: 0 !important;
+    transition: 0s display ease 2s, 0.3s opacity ease 0s !important;
+}
+
+.hideNavColor {
+    background: #ffffff00 !important;
+}
+
+.navIsScrolling {
+    background: #ffffff95;
+    transition: 0.4s all ease-in-out;
+    padding: rem(15) 0;
+}

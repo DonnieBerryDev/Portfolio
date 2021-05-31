@@ -1,0 +1,65 @@
+@mixin container-base {
+    margin: 0 auto;
+    padding: 0 40px;
+
+    @media only screen and (max-width: 610px) {
+        padding: 0 20px;
+    }
+}
+
+.container {
+    @include container-base;
+
+    &-main {
+        @extend .container;
+        max-width: 1640px;
+    }
+
+    &-right {
+        @extend .container;
+        max-width: 820px;
+        padding: 0;
+        padding-right: rem(40);
+        margin: 0;
+
+        @media only screen and (max-width: 610px) {
+            padding-right: rem(20);
+        }
+    }
+
+    &-left {
+        @extend .container;
+        max-width: 820px;
+        padding: 0;
+        padding-left: rem(40);
+        margin: 0 auto;
+        margin-right: 0;
+        position: relative;
+
+        @media only screen and (max-width: 610px) {
+            padding-left: rem(20);
+        }
+    }
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-5050 {
+    display: flex;
+
+    >* {
+        width: 50%;
+    }
+}
+
+// .flex-5050>*,
+// .flex>* {
+//     width: 100%;
+// }
