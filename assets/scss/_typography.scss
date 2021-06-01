@@ -9,6 +9,14 @@
 h1 {
     font-size: rem(60);
     font-weight: 300;
+
+    @media only screen and (max-width: 661px) {
+        font-size: rem(45)
+    }
+
+    @media only screen and (max-width: 400px) {
+        font-size: rem(30);
+    }
 }
 
 h2 {
