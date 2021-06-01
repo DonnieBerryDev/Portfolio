@@ -159,3 +159,5 @@ checkFades = () => {
 }
 
 document.addEventListener("scroll", checkFades)
+
+checkFades();
