@@ -48,6 +48,10 @@
 #companies {
     padding-bottom: rem(125);
 
+    @media only screen and (max-width: 991px) {
+        padding-bottom: 0;
+    }
+
     .boxes {
         border-left: 1px solid #ccc;
 
@@ -479,7 +483,6 @@
         flex-direction: column;
         justify-content: space-between;
         position: relative;
-
     }
 
     .testimony {
@@ -521,6 +524,10 @@
 
             @media only screen and (max-width: 1612px) {
                 align-items: center;
+            }
+
+            @media only screen and (max-width: 610px) {
+                padding-left: rem(20);
             }
 
 

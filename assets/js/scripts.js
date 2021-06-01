@@ -93,7 +93,7 @@ hamburger.addEventListener('click', () => {
         navList[i].style.opacity = 0.3;
     navList[0].style.opacity = 1;
 
-
+    document.body.classList.toggle('overflowYdisable')
     navOpenChildren.classList.toggle('hideNav')
     navOpen.classList.toggle('navOpened')
     nav.classList.toggle('hideNavColor')
@@ -104,7 +104,7 @@ hamburger.addEventListener('click', () => {
 
 checkVisability = (el) => {
     let element = el.getBoundingClientRect();
-    let distance = -250;
+    let distance = -175;
     if (element.top - window.innerHeight < distance) {
         return true;
     } else {

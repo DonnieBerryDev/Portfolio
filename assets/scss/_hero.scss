@@ -39,7 +39,7 @@
 
             @media only screen and (max-width: 991px) {
                 order: 2;
-                height: 40%;
+                height: 50vh;
             }
 
             // max-width: 45%;
@@ -71,6 +71,7 @@
                 margin-top: rem(200);
                 order: 1;
                 text-align: center;
+                display: none;
             }
 
             @media only screen and (max-width: 400px) {
