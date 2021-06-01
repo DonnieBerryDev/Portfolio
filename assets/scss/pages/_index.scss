@@ -48,6 +48,10 @@
 #companies {
     padding-bottom: rem(125);
 
+    @media only screen and (max-width: 1302px) {
+        padding-bottom: rem(50);
+    }
+
     @media only screen and (max-width: 991px) {
         padding-bottom: 0;
     }
@@ -69,6 +73,18 @@
         &:nth-child(1),
         &:nth-child(2) {
             @media only screen and (max-width: 1302px) {
+                margin-bottom: rem(100);
+            }
+
+        }
+
+        &:nth-child(3),
+        &:nth-child(4) {
+            @media only screen and (max-width: 1302px) {
+                margin-bottom: rem(50);
+            }
+
+            @media only screen and (max-width: 500px) {
                 margin-bottom: rem(100);
             }
 
