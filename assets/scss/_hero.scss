@@ -37,9 +37,10 @@
         &_text {
             margin-top: auto;
 
-            @media only screen and (max-width: 991px) {
+            @media only screen and (max-width: 1365px) {
                 order: 2;
-                height: 50vh;
+                // height: 30vh;
+                width: 100% !important;
             }
 
             // max-width: 45%;
@@ -52,14 +53,6 @@
                 animation: fade-in forwards;
                 animation-duration: 1.5s;
                 animation-delay: 1.4s;
-
-                @media only screen and (max-width: 1215px) {
-                    font-size: rem(48)
-                }
-
-                @media only screen and (max-width: 661px) {
-                    font-size: rem(35)
-                }
             }
         }
 
@@ -69,7 +62,7 @@
             margin-bottom: rem(155);
 
 
-            @media only screen and (max-width: 991px) {
+            @media only screen and (max-width: 1365px) {
                 height: 30%;
                 margin-bottom: auto;
                 margin-top: rem(200);
@@ -85,7 +78,7 @@
             img {
                 max-width: 100%;
 
-                @media only screen and (max-width: 991px) {
+                @media only screen and (max-width: 1365px) {
                     max-height: 40vh;
                 }
             }
@@ -93,7 +86,7 @@
     }
 
     &_content>* {
-        width: 100%;
+        width: 50%;
     }
 }
 
