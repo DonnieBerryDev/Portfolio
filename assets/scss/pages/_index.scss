@@ -600,12 +600,12 @@
                 position: relative;
                 bottom: auto;
                 padding-left: rem(40);
+                width: 100%;
             }
 
             @media only screen and (max-width: 610px) {
                 padding-left: rem(20);
                 padding-right: 0;
-                width: calc(100% - 20px);
             }
 
             &_header {
