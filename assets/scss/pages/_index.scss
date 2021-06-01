@@ -312,6 +312,12 @@
                         display: flex;
                         flex-direction: column;
                         padding: rem(50) 0;
+
+                        p {
+                            @media only screen and (max-width: 460px) {
+                                padding-right: rem(10)
+                            }
+                        }
                     }
 
                     .activeProjects_text_section_right {
