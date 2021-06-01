@@ -11,6 +11,10 @@
         &_left {
             padding-right: rem(40);
 
+            @media only screen and (max-width: 500px) {
+                padding-left: 0 rem(10);
+            }
+
             @media only screen and (max-width: 800px) {
                 width: 100%;
                 padding-right: 0;
@@ -48,10 +52,6 @@
 #companies {
     padding-bottom: rem(125);
 
-    @media only screen and (max-width: 1302px) {
-        padding-bottom: rem(50);
-    }
-
     @media only screen and (max-width: 991px) {
         padding-bottom: 0;
     }
@@ -70,21 +70,13 @@
         width: 25%;
         position: relative;
 
+        @media only screen and (max-width: 500px) {
+            padding: 0 rem(10) !important;
+        }
+
         &:nth-child(1),
         &:nth-child(2) {
             @media only screen and (max-width: 1302px) {
-                margin-bottom: rem(100);
-            }
-
-        }
-
-        &:nth-child(3),
-        &:nth-child(4) {
-            @media only screen and (max-width: 1302px) {
-                margin-bottom: rem(50);
-            }
-
-            @media only screen and (max-width: 500px) {
                 margin-bottom: rem(100);
             }
 
@@ -278,10 +270,14 @@
 
                     .activeProjects_text_section_text {
                         h4 {
-                            font-size: rem(160);
+                            font-size: rem(120);
                             font-weight: 600;
                             color: $clr-light;
                             line-height: 1;
+
+                            @media only screen and (max-width: 460px) {
+                                font-size: rem(60);
+                            }
                         }
                     }
                 }
@@ -300,6 +296,10 @@
                         font-weight: 600;
                         line-height: 1;
                         margin-bottom: rem(10);
+
+                        @media only screen and (max-width: 460px) {
+                            font-size: rem(60);
+                        }
                     }
 
                     .activeProjects_text_section_left {
@@ -329,6 +329,10 @@
                         color: #fff;
                         font-weight: 600;
                         padding-bottom: rem(5);
+
+                        @media only screen and (max-width: 460px) {
+                            font-size: rem(60);
+                        }
                     }
 
                     p {
@@ -589,6 +593,7 @@
             margin-bottom: rem(60);
             position: absolute;
             bottom: 0;
+
             padding-right: 2.5rem;
 
             @media only screen and (max-width: 991px) {
