@@ -8,15 +8,28 @@ nav {
     animation: fade-in;
     animation-duration: 1.2s;
     box-shadow: none;
-    transition: 0.4s all ease-in-out;
+    transition: 0.65s all ease-in-out;
+    height: rem(140);
 
+    .container-main {
+        height: 100%;
 
+        .flex-space {
+            height: 100%;
+            width: 100%;
+        }
+    }
 }
 
 .nav {
     &_logo {
-        max-height: 100%;
-        max-width: 230px;
+        height: 100%;
+
+        // max-width: 230px;
+        a {
+            height: 100%;
+            width: 100%;
+        }
 
         @media only screen and (max-width: 661px) {
             max-width: 150px;
@@ -68,6 +81,8 @@ nav {
         img {
             height: 91%;
             max-width: 100%;
+            transition: 0.4s all ease-in-out;
+
         }
     }
 
@@ -205,7 +220,8 @@ nav {
 }
 
 .navIsScrolling {
-    background: #ffffff95;
-    transition: 0.4s all ease-in-out;
+    background: rgba(255, 255, 255, 0.9);
+    transition: 0.65s all ease-in-out;
     padding: rem(15) 0;
+    height: rem(75);
 }

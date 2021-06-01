@@ -45,6 +45,21 @@
     }
 }
 
+.btn-testimony {
+    @extend .btn-main;
+    border: 1px solid #ccc;
+    padding: rem(5) rem(18);
+
+    img {
+        max-height: 20px;
+    }
+
+    &:hover {
+        background: #FFFFFF10;
+        transition: 0.3s all ease;
+    }
+}
+
 .btn-alt--dark {
     @extend .btn-main;
     border: 1px solid #ccc;

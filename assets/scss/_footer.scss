@@ -1,5 +1,5 @@
 footer {
-    padding: rem(60) 0;
+    padding: rem(53) 0 rem(60) 0;
 
     .container-main {
         &:nth-child(2) {
@@ -169,7 +169,7 @@ footer {
                     width: 40%;
                     margin-left: auto;
                     display: flex;
-                    padding-left: rem(10);
+                    padding-left: rem(20);
 
                     @media only screen and (max-width: 1331px) {
                         width: 50%;

@@ -250,7 +250,7 @@
 
                 &:nth-child(2) {
                     border-bottom: 1px solid #606060;
-                    padding: rem(60) 0;
+                    padding: rem(50) 0;
 
                     p {
                         font-size: rem(20);
@@ -266,7 +266,7 @@
 
                     .activeProjects_text_section_text {
                         h4 {
-                            font-size: rem(120);
+                            font-size: rem(160);
                             font-weight: 600;
                             color: $clr-light;
                             line-height: 1;
@@ -307,7 +307,7 @@
                         align-items: center;
                         display: flex;
                         flex-direction: column;
-                        padding: rem(50) 0;
+                        padding: rem(40) 0;
 
                         p {
                             @media only screen and (max-width: 460px) {
@@ -330,7 +330,6 @@
                         text-align: center;
                         color: #fff;
                         font-weight: 600;
-                        padding-bottom: rem(5);
 
                         @media only screen and (max-width: 460px) {
                             font-size: rem(60);
@@ -357,8 +356,8 @@
 
 
 #news {
-    padding-top: rem(60);
-    padding-bottom: rem(120);
+    padding-top: rem(80);
+    padding-bottom: rem(110);
     background: #f7f7f7;
 
     .flex-5050 {
@@ -403,7 +402,7 @@
             }
 
             &_sections {
-                padding-left: rem(150);
+                padding-left: rem(175);
                 // padding-right: rem(50);
                 display: flex;
                 flex-direction: column;
@@ -439,7 +438,7 @@
                     font-size: rem(20);
                     position: absolute;
                     top: 22px;
-                    left: -41px;
+                    left: -51px;
 
                     @media only screen and (max-width: 991px) {
                         display: none
@@ -613,7 +612,7 @@
             }
 
             &_btn {
-                margin-bottom: rem(13);
+                margin-bottom: rem(17);
             }
         }
     }
@@ -640,7 +639,6 @@
 }
 
 .active_news h4,
-.active_news h5,
 .active_news span {
     color: black !important;
 }
