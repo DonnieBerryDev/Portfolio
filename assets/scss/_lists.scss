@@ -42,17 +42,19 @@ footer {
         }
     }
 
-    ul.address {
-        list-style: none;
+}
 
-        li {
-            margin-bottom: rem(3);
-            font-size: rem(18);
-            font-weight: 300;
 
-            &:last-child {
-                margin-bottom: rem(25);
-            }
+ul.address {
+    list-style: none;
+
+    li {
+        margin-bottom: rem(3);
+        font-size: rem(18);
+        font-weight: 300;
+
+        &:last-child {
+            margin-bottom: rem(25);
         }
     }
 }

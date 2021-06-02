@@ -63,11 +63,62 @@ nav {
     z-index: 1;
     transition: 0.3s opacity ease 0s, 0s height ease 0.3s, 0.3s background ease 0s;
 
+    .navList {
+        &_footer {
+            margin-top: auto;
+            display: flex;
+            opacity: 0.5;
+
+            @media only screen and (max-width: 991px) {
+                flex-wrap: wrap;
+            }
+
+            &_left {
+                margin-right: rem(20);
+
+                @media only screen and (max-width: 991px) {
+                    width: 100%;
+                }
+            }
+
+            &_right {
+                @media only screen and (max-width: 991px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
     .container-main {
+        height: 100%;
+        position: relative;
+
         @media only screen and (max-width: 991px) {
             flex-direction: row;
             justify-content: flex-start !important;
             flex-wrap: wrap;
+        }
+
+        .navOpen_cta {
+            position: absolute;
+            bottom: 0;
+            left: rem(40);
+            bottom: rem(120);
+            opacity: 0.5;
+
+            @media only screen and (max-width: 991px) {
+                position: relative;
+                bottom: initial;
+                left: initial;
+                order: 2;
+
+            }
+
+            a {
+                color: white;
+                text-underline-offset: 5px;
+                font-size: rem(20)
+            }
         }
     }
 
@@ -88,7 +139,7 @@ nav {
 
     .navigation_links {
         display: flex;
-        width: rem(300);
+        width: rem(310);
 
         @media only screen and (max-width: 991px) {
             margin-right: initial;
@@ -106,14 +157,20 @@ nav {
                 a {
                     color: white;
                     text-decoration: none;
-                    font-size: rem(30)
+                    font-size: rem(30);
+
+                    @media only screen and (max-width: 991px) {
+                        font-size: 15px;
+                    }
+
                 }
             }
         }
     }
 
     .container-main {
-        padding-top: 20vh;
+        padding-top: rem(220);
+        padding-bottom: rem(94);
         display: flex;
         justify-content: flex-end;
 
