@@ -7,16 +7,20 @@
     position: relative;
     animation: fade-in forwards;
     animation-duration: 1.5s;
+    padding-top: rem(160);
 
     .container {
         height: 100%;
+    }
+
+    @media only screen and (max-width: 991px) {
+        padding-top: 0;;
     }
 }
 
 .hero {
     position: relative;
     z-index: 2;
-
     &_content {
         display: flex;
         height: 100%;
