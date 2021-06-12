@@ -66,6 +66,10 @@
         width: 25%;
         position: relative;
 
+        @media only screen and (max-width: 991px) {
+            margin-bottom: rem(100);
+        }
+
         @media only screen and (max-width: 500px) {
             padding: 0 rem(20) !important;
         }
@@ -99,6 +103,7 @@
 
         &:not(:last-child) {
             border-right: 1px solid #ccc;
+
 
             @media only screen and (max-width: 500px) {
                 border-right: 0px;
@@ -168,11 +173,11 @@
             max-width: 1640px;
             padding-right: 0;
             margin: 0 auto;
-            padding: 0 rem(40);
+            padding: 0 40px;
         }
 
         @media only screen and (max-width: 610px) {
-            padding: 0 rem(20);
+            padding: 0 20px;
         }
     }
 
@@ -209,7 +214,7 @@
         }
 
         &_text {
-            padding-left: rem(150);
+            padding-left: rem(160);
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -402,7 +407,7 @@
             }
 
             &_sections {
-                padding-left: rem(175);
+                padding-left: rem(160);
                 // padding-right: rem(50);
                 display: flex;
                 flex-direction: column;
@@ -504,6 +509,9 @@
         flex-direction: column;
         justify-content: space-between;
         position: relative;
+        @media only screen and (max-width: 991px)  {
+            max-width: 100%;
+        }
     }
 
     .testimony {
@@ -548,7 +556,7 @@
             }
 
             @media only screen and (max-width: 610px) {
-                padding-left: rem(20);
+                padding-left: 20px;
             }
 
 
@@ -568,7 +576,7 @@
         &_text {
             padding-bottom: rem(50);
             max-width: 78%;
-            margin-left: auto;
+            margin-left: rem(160);
 
             @media only screen and (max-width: 1612px) {
                 margin-left: initial;
@@ -588,12 +596,18 @@
             display: flex;
             align-items: flex-end;
             width: calc(100% - 40px);
-            padding-left: rem(165);
+            padding-left: rem(160);
             border-bottom: 1px solid #5e5e5e;
             justify-content: space-between;
             margin-bottom: rem(60);
             position: absolute;
             bottom: 0;
+            @media only screen and (max-width: 1612px) {
+                margin-left: initial;
+                max-width: 100%;
+                padding-left: rem(40);
+            }
+
 
             @media only screen and (max-width: 991px) {
                 position: relative;
