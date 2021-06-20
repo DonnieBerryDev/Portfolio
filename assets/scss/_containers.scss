@@ -9,15 +9,19 @@
 
 .container {
     @include container-base;
-
     &-main {
         @extend .container;
-        max-width: 1640px;
+        max-width: 1280px;
+    }
+
+    &-inner {
+        @extend .container;
+        max-width: 880px;
     }
 
     &-right {
         @extend .container;
-        max-width: 820px;
+        // max-width: 820px;
         padding: 0;
         padding-right: rem(40);
         margin: 0;
@@ -29,7 +33,7 @@
 
     &-left {
         @extend .container;
-        max-width: 820px;
+        // max-width: 820px;
         padding: 0;
         padding-left: rem(40);
         margin: 0 auto;
@@ -50,16 +54,3 @@
 .flex {
     display: flex;
 }
-
-.flex-5050 {
-    display: flex;
-
-    >* {
-        width: 50%;
-    }
-}
-
-// .flex-5050>*,
-// .flex>* {
-//     width: 100%;
-// }

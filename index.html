@@ -2,464 +2,381 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Linear Group</title>
-  <link rel="stylesheet" href="./assets/scss/normalize/normalize.css">
-  <link rel="stylesheet" href="./dist/main.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./dist/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Portfolio - Donnie Berry</title>
 </head>
 
 <body>
-  <section id="navOpen" class="navBlack">
-    <section id="navImg">
-      <img src="./assets/images/large_icon_nav.png" alt="">
+    <div class="hamburgerBar">
+        <div id="hamburger">
+            <div class="container-main">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <title>menu</title>
+                    <g fill="#ffffff">
+                        <path
+                            d="M45,22H3c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1h42c0.552,0,1-0.448,1-1v-2 C46,22.448,45.552,22,45,22z">
+                        </path>
+                        <path fill="#ffffff"
+                            d="M23,36H3c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1h20c0.552,0,1-0.448,1-1v-2C24,36.448,23.552,36,23,36z ">
+                        </path>
+                        <path fill="#ffffff"
+                            d="M45,8H25c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1h20c0.552,0,1-0.448,1-1V9C46,8.448,45.552,8,45,8z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container-main">
+            <div class="nav_links">
+                <ul class="mainNav">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="container-main">
+            <div class="hero_inner">
+                <div class="hero_intro1" data-aos="fade-up">
+                    <h2 class="clr-light">Hi👋🏻, my name is</h2>
+                </div>
+                <div class="hero_intro2" data-aos="fade-up" data-aos-delay="300">
+                    <h1 class="clr-white">Donnie Berry</h1>
+                </div>
+                <div class="hero_intro3" data-aos="fade-up" data-aos-delay="600">
+                    <p class="clr-light">I am a front-end developer based in Bellshill, Scotland. My goal is to create
+                        pixel perfect, speed efficient and accessible web solutions that provide excellent user
+                        experience.</p>
+                </div>
+                <div class="hero_btn" data-aos="fade-up" data-aos-delay="1000">
+                    <a href="#projects" class="btn-main">See my projects</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero_showmore">
+            <div class="hero_showmore_text">
+                <a href="#aboutme">
+                    <p class="clr-white">Show me more</p>
+                </a>
+            </div>
+            <div class="hero_showmore_arrow">
+                <img src="./assets/images/arrow_down.png" alt="">
+            </div>
+        </div>
     </section>
-    <div class="container-main hideNav">
-      <div class="navOpen_cta">
-        <a href="#">Subscribe for updates</a>
-      </div>
-      <div class="navigation_links" id="nav-group">
-        <ul>
-          <li><a href="#">Companies</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Clients</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Accreditations</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="navigation_links hideNavItem" id="nav-projects">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">People</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="navigation_links hideNavItem" id="nav-design">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">People</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="navigation_links hideNavItem" id="nav-building">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">People</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="navigation_links hideNavItem" id="nav-fire">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">People</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="navList">
-        <div class="navList_options">
-          <ul>
-            <li><a href="#" id="group">linear group</a></li>
-            <li><a href="#" id="projects">linear projects</a></li>
-            <li><a href="#" id="design">linear design & construct</a></li>
-            <li><a href="#" id="building">linear building compliance</a></li>
-            <li><a href="#" id="fire">linear fire safety</a></li>
-          </ul>
-        </div>
 
-        <div class="navList_footer">
-          <div class="navList_footer_left">
-            <ul class="address">
-              <li class="clr-light">Glasgow</li>
-              <li class="clr-light">T: 0141 773 6160</li>
-            </ul>
-          </div>
-          <div class="navList_footer_right">
-            <ul class="address">
-              <li class="clr-light">Manchester</li>
-              <li class="clr-light">T: 0141 773 6160</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <nav>
-    <div class="container-main">
-      <div class="flex-space">
-        <div class="nav_logo">
-          <a href="index.html"><img src="./assets/images/logo.png" alt="Company Logo"></a>
-        </div>
-        <div class="nav_menu" id="hamburger">
-          <img src="./assets/images/menu_closed.png" alt="Hamburger Menu">
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <section id="hero">
-    <div class="container-main">
-      <div class="hero_content">
-        <div class="hero_content_text left-padding">
-          <h1 class="clr-light">Delivering extensive specialist trade expertise to the construction industry</h1>
-          <div class="hero_content_button">
-            <a href="#" class="btn-main">About</a>
-          </div>
-        </div>
-        <div class="hero_content_img">
-          <img src="assets/images/large-icon.png" alt="Large Logo">
-        </div>
-      </div>
-    </div>
-    <div class="hero_gradient"></div>
-  </section>
-
-  <section id="intro">
-    <div class="container-main">
-      <div class="intro_content flex-5050 opacityOn hidden">
-        <div class="intro_content_left left-padding">
-          <h2>An integrated group of companies</h2>
-        </div>
-        <div class="intro_content_right">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ita redarguitur ipse a sese, convincunturque
-            scripta eius probitate ipsius ac moribus. Duo Reges: constructio interrete. Quid est, quod ab ea absolvi et
-            perfici debeat</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="companies">
-    <div class="container-main">
-      <div class="boxes flex">
-        <div class="company_box fade-companyboxes hideInOrder">
-          <div class="company_box_logo">
-            <img src="assets/images/logo_projects.png" alt="Linear Projects Logo">
-          </div>
-          <div class="company_box_text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae enim adhuc protulisti, popularia sunt, ego
-              autem a te elegantiora desidero. Duo Reges: constructio interrete.</p>
-          </div>
-          <div class="company_box_btn">
-            <a href="#" class="btn-alt--dark"><img src="assets/images/btn-arrow.png" alt=""></a>
-          </div>
-        </div>
-        <div class="company_box fade-companyboxes hideInOrder">
-          <div class="company_box_logo">
-            <img src="assets/images/logo_design.png" alt="Linear Design & Construct Logo">
-          </div>
-          <div class="company_box_text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae enim adhuc protulisti, popularia sunt, ego
-              autem a te elegantiora desidero. Duo Reges: constructio interrete.</p>
-          </div>
-          <div class="company_box_btn">
-            <a href="#" class="btn-alt--dark"><img src="assets/images/btn-arrow.png" alt=""></a>
-          </div>
-        </div>
-        <div class="company_box fade-companyboxes hideInOrder">
-          <div class="company_box_logo">
-            <img src="assets/images/logo_building.png" alt="Linear Building Compliance Logo">
-          </div>
-          <div class="company_box_text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae enim adhuc protulisti, popularia sunt, ego
-              autem a te elegantiora desidero. Duo Reges: constructio interrete.</p>
-          </div>
-          <div class="company_box_btn">
-            <a href="#" class="btn-alt--dark"><img src="assets/images/btn-arrow.png" alt=""></a>
-          </div>
-        </div>
-        <div class="company_box fade-companyboxes hideInOrder">
-          <div class="company_box_logo">
-            <img src="assets/images/logo_fire.png" alt="Linear Fire Safety Logo">
-          </div>
-          <div class="company_box_text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae enim adhuc protulisti, popularia sunt, ego
-              autem a te elegantiora desidero. Duo Reges: constructio interrete.</p>
-          </div>
-          <div class="company_box_btn">
-            <a href="#" class="btn-alt--dark"><img src="assets/images/btn-arrow.png" alt=""></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="activeProjects" class="flex">
-    <div class="activeProjects_left">
-      <div class="container-left">
-        <a href="#" class="btn-white">Active Projects</a>
-      </div>
-      <img src="./assets/images/active_projects.png" alt="Current Active Projects">
-      <div id="activeProjectOverlay" class="">
-        <img src="./assets/images/dots.png" alt="">
-      </div>
-    </div>
-    <div class="activeProjects_right">
-      <div class="container-right">
-        <div class="activeProjects_text">
-          <div class="activeProjects_text_section">
-            <h5 class="clr-light">GROUP AT A GLANCE</h5>
-          </div>
-          <div class="activeProjects_text_section">
-            <div class="activeProjects_flex">
-              <div class="activeProjects_text_section_middle">
-                <p>£</p>
-              </div>
-              <div class="activeProjects_text_section_text">
-                <h4>73m</h4>
-              </div>
+    <section id="aboutme" data-aos="fade-up">
+        <div class="container-inner">
+            <div class="aboutme_header center">
+                <h2 class="clr-light section-header">About Me</h2>
             </div>
-            <p>2021 Forecast group turnover</p>
-          </div>
-          <div class="activeProjects_text_section">
-            <div class="activeProjects_text_section_left">
-              <h4>125</h4>
-              <p>Directly employed staff</p>
-            </div>
-            <div class="activeProjects_text_section_right">
-              <h4>35</h4>
-              <p>Active Projects</p>
-            </div>
-          </div>
-          <div class="activeProjects_text_section">
-            <h4>5k - 2.5M</h4>
-            <p>Project value range</p>
-            <p class="alt">1 As of June 30, 2020. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ex ea
-              difficultate illae
-              fallaciloquae, ut ait Accius, malitiae natae sunt.orem ipsum dolor sit amet, consectetur adipiscing elit.
-              Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="news">
-    <div class="container-main">
-      <div class="news_header">
-        <h5>NEWS & UPDATES</h5>
-      </div>
-      <div class="flex-5050 news_slider">
-        <div class="news_slider_img">
-          <img src="assets/images/news_1.png" alt="News Image One">
-        </div>
-        <div class="news_slider_sections">
-
-          <div class="news_slider_section active_news fade-newsboxes hideInOrder">
-            <div class="news_slider_section_content">
-              <h5>17 December 2020 - linear group</h5>
-              <div class="news_slider_section_header">
-                <h4 class="active_news">Linear Projects expand remit at Royal Sussex County Hospital 3Ts Redevelopment
-                </h4>
-                <div class="news_slider_section_number">
-                  <span>01</span>
+            <div class="aboutme_me">
+                <div class="flex">
+                    <div class="aboutme_text">
+                        <p class="clr-white">I am a front-end developer with a bachelors degree in "web and mobile
+                            development". I've been coding since I was a teenager and have a huge passion for the
+                            industry.
+                            <br /><br />
+                            My most comfortable tech stack is as follows:
+                        </p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS/SCSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Gulp</li>
+                            <li>WordPress</li>
+                        </ul>
+                        <p class="clr-white">I am constantly learning and evolving. My main goal is to become a senior
+                            full-stack developer.
+                        </p>
+                    </div>
+                    <div class="aboutme_img">
+                        <img src="./assets/images/person.png" alt="Donnie Berry Portrait">
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
+    </section>
 
 
-          <div class="news_slider_section">
-            <div class="news_slider_section_content fade-newsboxes hideInOrder">
-              <h5>17 December 2020 - linear projects</h5>
-              <div class="news_slider_section_header">
-                <h4>Healthcare expertise showcased with two major North of England contracts
-                </h4>
-                <div class="news_slider_section_number">
-                  <span>02</span>
+    <section id="projects">
+        <div class="container-main">
+            <div class="projects_header center">
+                <h2 class="clr-light section-header">Projects📁</h2>
+            </div>
+
+            <div class="projects">
+                <div class="project" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex">
+                        <a href="https://mimramservices.com/" target="_blank" class="projects">
+                            <div class="project_img">
+                                <img src="./assets/images/mimram.jpg" alt="Mimram Construction Project">
+                            </div>
+                        </a>
+                        <div class="project_text">
+                            <div class="project_text_header">
+                                <h2 class="clr-light">Mimram Construction</h2>
+                            </div>
+                            <div class="project_text_blurb">
+                                <p class="clr-white">First full freelance project. Homepage design was pre-determined
+                                    but all sub-page design is done by me.
+                                </p>
+                            </div>
+
+                            <div class="project_text_skills">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>SCSS</li>
+                                    <li>JavaScript</li>
+                                    <li>JQuery</li>
+                                    <li>PHP</li>
+                                    <li>Slick.js</li>
+                                </ul>
+                            </div>
+
+                            <div class="project_text_links">
+                                <div class="project_text_links_link">
+                                    <a href="https://mimramservices.com/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="news_slider_section">
-            <div class="news_slider_section_content fade-newsboxes hideInOrder">
-              <h5>17 December 2020 - linear fire safety</h5>
-              <div class="news_slider_section_header">
-                <h4>Introducing Angela Eckersley, Group Planning Manager
-                </h4>
-                <div class="news_slider_section_number">
-                  <span>03</span>
+
+                <div class="project" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex">
+                        <a href="https://donnieberrydev.github.io/Cole-Skate/" target="_blank" class="projects">
+                            <div class="project_img">
+                                <img src="./assets/images/cole.jpg" alt="Cole Skate Project">
+                            </div>
+                        </a>
+                        <div class="project_text">
+                            <div class="project_text_header">
+                                <h2 class="clr-light">Cole Skate</h2>
+                            </div>
+                            <div class="project_text_blurb">
+                                <p class="clr-white">Build for an interview. I like to showcase this as it shows my SCSS
+                                    skills and some of my JavaScript skills
+                                </p>
+                            </div>
+
+                            <div class="project_text_skills">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>SCSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+
+                            <div class="project_text_links">
+                                <div class="project_text_links_link">
+                                    <a href="https://github.com/DonnieBerryDev/Cole-Skate" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+
+                                <div class="project_text_links_link">
+                                    <a href="https://donnieberrydev.github.io/Cole-Skate/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="news_slider_section">
-            <div class="news_slider_section_content fade-newsboxes hideInOrder">
-              <h5>17 December 2020 - linear group</h5>
-              <div class="news_slider_section_header">
-                <h4>Jason Stott promoted to Procurement Manager for Linear Group
-                </h4>
-                <div class="news_slider_section_number">
-                  <span>04</span>
+                <div class="project" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex">
+                        <a href="https://hannahlondon.com/" target="_blank" class="projects">
+                            <div class="project_img">
+                                <img src="./assets/images/hannah.jpg" alt="Hannah London Project">
+                            </div>
+                        </a>
+                        <div class="project_text">
+                            <div class="project_text_header">
+                                <h2 class="clr-light">Hannah London</h2>
+                            </div>
+                            <div class="project_text_blurb">
+                                <p class="clr-white">Various WordPress fixes such as fixing page speed, styling changes
+                                    etc.
+                                    Also, several other small implentations
+                                </p>
+                            </div>
+
+                            <div class="project_text_skills">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>SCSS</li>
+                                    <li>JavaScript</li>
+                                    <li>PHP</li>
+                                    <li>WordPress</li>
+                                </ul>
+                            </div>
+
+                            <div class="project_text_links">
+                                <div class="project_text_links_link">
+                                    <a href="https://hannahlondon.com/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
+                <div class="project" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex">
+                        <a href="https://donnieberrydev.github.io/tweet-generator/" target="_blank" class="projects">
+                            <div class="project_img">
+                                <img src="./assets/images/tweet.PNG" alt="Tweet Generator Project">
+                            </div>
+                        </a>
+                        <div class="project_text">
+                            <div class="project_text_header">
+                                <h2 class="clr-light">Tweet Generator</h2>
+                            </div>
+                            <div class="project_text_blurb">
+                                <p class="clr-white">WIP React project. Have plans to implement click to screenshot,
+                                    upload tweet and more styling options.
+                                </p>
+                            </div>
 
-        </div>
-      </div>
+                            <div class="project_text_skills">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>SCSS</li>
+                                    <li>JavaScript</li>
+                                    <li>React</li>
+                                </ul>
+                            </div>
 
-    </div>
-  </section>
-  <section id="testimony">
-    <div class="flex-5050">
-      <div class="testimony_left">
-        <div class="testimony_img">
-          <img src="./assets/images/testimony.png" alt="Testimony">
-        </div>
-      </div>
-      <div class="testimony_right">
-        <div class="container-right">
-          <div class="testimony_container opacityOn hidden">
-            <div class="testimony_text">
-              <h4>“Linear is fueled by its people — talented and driven people that are passionate about the work we do
-                and
-                the impact we have on the world.”</h4>
+                            <div class="project_text_links">
+                                <div class="project_text_links_link">
+                                    <a href="https://github.com/DonnieBerryDev/tweet-generator" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg>
+                                    </a>
+                                </div>
 
-              <div class="testimony_person">
-                <div class="testimony_person_img">
-                  <img src="./assets/images/person.png" alt="Stephen Holmes Photo">
+
+                                <div class="project_text_links_link">
+                                    <a href="https://donnieberrydev.github.io/tweet-generator/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimony_person_text">
-                  <p>Stephen Holmes <br /> CEO</p>
+
+                <div class="project" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex">
+                        <a href="https://github.com/DonnieBerryDev" target="_blank" class="projects">
+                            <div class="project_img">
+                                <img src="./assets/images/github.PNG" alt="Personal Github">
+                            </div>
+                        </a>
+                        <div class="project_text">
+                            <div class="project_text_header">
+                                <h2 class="clr-light">Github</h2>
+                            </div>
+                            <div class="project_text_blurb">
+                                <p class="clr-white">My personal github. Have a look to see all of my other projects.
+                                </p>
+                            </div>
+
+                            <div class="project_text_skills"></div>
+
+                            <div class="project_text_links">
+                                <div class="project_text_links_link">
+                                    <a href="https://github.com/DonnieBerryDev" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+
+                                <div class="project_text_links_link">
+                                    <a href="https://github.com/DonnieBerryDev/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="testimony_cta">
-            <div class="testimony_cta_header">
-              <h5 class="clr-light">Careers</h5>
-            </div>
-
-            <div class="testimony_cta_btn">
-              <a href="#" class="btn-testimony"><img src="assets/images/btn-arrow.png" alt=""></a>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <div class="container-main opacityOn hidden">
-      <div class="flex-5050">
-        <div class="footer_left">
-          <div class="footer_left_header">
-            <h2>Subscribe for updates</h2>
-          </div>
-          <div class="footer_left_input">
-            <form>
-              <div class="inputBox">
-                <input type="text" placeholder="Enter your email address" />
-                <div class="inputBox_arrow"><input type="image" name="submit" src="./assets/images/btn-arrow.png"
-                    border="0" alt="Submit" /></div>
 
-              </div>
-              <input type="checkbox" required>
-              <p>By subscribing to our newsletter, you are agreeing to our <a href="#">privacy policy</a></p>
-            </form>
-          </div>
-          <div class="footer_left_contact">
-            <div class="footer_left_contact_block">
-              <h5>partner with us</h5>
-              <a href="#">Talk to us</a>
+
+
+    <section id="contact">
+        <div class="container-main">
+            <div class="contact_header center">
+                <h2 class="clr-light section-header">Contact📨</h2>
+            </div>
+            <div class="contact_text center">
+                <p class="clr-white">If you like what you see, get in touch! <br />My inbox is always open.</p>
             </div>
 
-            <div class="footer_left_contact_block">
-              <h5>join us</h5>
-              <a href="#">Find your role</a>
+            <div class="contact_btn">
+                <a href="mailto: donniejrberry@gmail.com" class="btn-main">Send me an email</a>
             </div>
-
-            <div class="footer_left_contact_block">
-              <h5>connect</h5>
-              <a href="#">LinkedIn</a>
-            </div>
-          </div>
-
         </div>
-        <div class="footer_right">
-          <div class="footer_right_location1">
-            <h2>Glasgow</h2>
-            <ul class="address">
-              <li>8-12 Blairtummock Place</li>
-              <li>Panorama Business Village</li>
-              <li>Glasgow</li>
-              <li>G33 4EN</li>
-            </ul>
-            <ul class="address">
-              <li>T: 0141 773 6160</li>
-              <li>F: 0141 773 6161</li>
-            </ul>
-            <div class="footer_right_location2_btn">
-              <a href="#" class="btn-footer clr-dark">EMAIL</a>
-              <a href="#" class="btn-footer clr-dark">FIND US</a>
-            </div>
-          </div>
-          <div class="footer_right_location2">
-            <h2>Manchester</h2>
-            <ul class="address">
-              <li>Bowdon House</li>
-              <li>2 Scott Drive, Altrincham</li>
-              <li>Cheshire</li>
-              <li>WA15 8AB</li>
-            </ul>
-            <ul class="address">
-              <li>T: 0161 888 2200</li>
-              <li>F: 0161 877 9747</li>
-            </ul>
-            <div class="footer_right_location2_btn">
-              <a href="#" class="btn-footer clr-dark">EMAIL</a>
-              <a href="#" class="btn-footer clr-dark">FIND US</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
 
-    <div class="container-main">
-      <div class="flex-5050">
-        <div class="copyright">
-          <div class="copyright_logo">
-            <img src="./assets/images/logo_small.png" alt="Company Logo">
-          </div>
-          <div class="copyright_text">
-            <p> &copy; Linear group. All rights reserved. </p>
-          </div>
+    <footer>
+        <div class="container-main">
+            <div class="footer_text">
+                <p class="clr-white">Website designed and maintained by Donnie Berry - 2021</p>
+            </div>
         </div>
-        <div class="footer_links">
-          <ul>
-            <li><a href="#">Privacy & Cookies Policy</a></li>
-            <li><a href="#">Modern Slavery</a></li>
-            <li><a href="#">Data Protection</a></li>
-            <li><a href="#">Environmental Policy</a></li>
-            <li><a href="#">Health & Safety Policy</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="dist/scripts.js"></script>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./dist/scripts.js"></script>
 </body>
 
 </html>

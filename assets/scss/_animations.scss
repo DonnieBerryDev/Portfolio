@@ -1,29 +1,13 @@
-@keyframes fade-in {
+@keyframes arrowBounce {
     0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes flash {
-    0% {
-        opacity: 0;
+        bottom: -5px;
     }
 
     50% {
-        opacity: 1
+        bottom: 0px;
     }
 
     100% {
-        opacity: 0;
+        bottom: -5px;
     }
-}
-
-.flashAnim {
-    animation: flash;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
 }

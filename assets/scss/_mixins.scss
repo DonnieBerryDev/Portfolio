@@ -1,5 +1,5 @@
 // Rem Function
-$baseFontSize: 16;
+$baseFontSize: 20;
 
 @function rem($pixels, $context: $baseFontSize) {
     @if (unitless($pixels)) {

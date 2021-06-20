@@ -7,19 +7,25 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth !important;
+
 }
+
+html {}
 
 html,
 body {
     height: 100%;
     position: relative;
-    font-size: 16px;
-
-    @media only screen and (max-width: 991px) {
-        font-size: 14px;
-    }
+    font-size: 20px;
+    background: $clr-main;
+    background-image: url(./../assets/images/classy-fabric.png);
 
     @media only screen and (max-width: 600px) {
-        font-size: 12px;
+        font-size: 16px;
     }
+}
+
+.disableScroll {
+    overflow-y: hidden;
 }
