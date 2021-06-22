@@ -7,9 +7,9 @@
   const hamburger = document.querySelector('#hamburger')
   const navLinks = document.querySelectorAll('nav a')
   const showMore = document.querySelector('.hero_showmore')
+  const doc = documen.querySelector('html')
 
   function scrollEvent() {
-      console.log(navLinks)
       if (window.scrollY > 0) {
           nav.classList.add('active-nav')
       } else {
@@ -21,13 +21,15 @@
       link.addEventListener('click', function () {
           nav.classList.remove('nav-open')
           document.body.classList.remove('disableScroll')
+          html.classList.remove('disableScroll')
       })
   })
 
   hamburger.addEventListener('click', function () {
       nav.classList.toggle('nav-open')
       document.body.classList.toggle('disableScroll')
-      console.log(hamburger)
+      html.classList.toggle('disableScroll')
+
   })
 
   document.addEventListener('scroll', scrollEvent)
