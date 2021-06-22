@@ -7,7 +7,7 @@
   const hamburger = document.querySelector('#hamburger')
   const navLinks = document.querySelectorAll('nav a')
   const showMore = document.querySelector('.hero_showmore')
-  const doc = documen.querySelector('html')
+  const doc = document.querySelector('html')
 
   function scrollEvent() {
       if (window.scrollY > 0) {
