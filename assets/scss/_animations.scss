@@ -1,13 +1,32 @@
 @keyframes arrowBounce {
-    0% {
-        bottom: -5px;
-    }
+  0% {
+    bottom: -5px;
+  }
 
-    50% {
-        bottom: 0px;
-    }
+  50% {
+    bottom: 0px;
+  }
 
-    100% {
-        bottom: -5px;
-    }
+  100% {
+    bottom: -5px;
+  }
+}
+
+@keyframes fadeOutHide {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+    display: none !important;
+  }
+}
+
+.fadeOutHide {
+  animation: fadeOutHide 0.4s forwards;
 }
