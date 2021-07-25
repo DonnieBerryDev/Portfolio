@@ -28,6 +28,7 @@ navLinks.forEach((link) => {
 
 hamburger.addEventListener("click", function () {
   nav.classList.toggle("nav-open");
+  hamburger.classList.toggle("hamburgerOpen");
   document.body.classList.toggle("disableScroll");
   html.classList.toggle("disableScroll");
 });

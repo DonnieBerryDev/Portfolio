@@ -443,3 +443,9 @@
 .whatido_content {
   position: relative;
 }
+
+.see_projects {
+  @media only screen and (max-width: 840px) {
+    display: none;
+  }
+}

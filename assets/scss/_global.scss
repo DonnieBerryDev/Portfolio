@@ -29,3 +29,50 @@ body {
 .disableScroll {
   overflow: hidden !important;
 }
+
+.hamburger_design {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 45px;
+  padding: rem(10) 0;
+
+  span {
+    display: block;
+    background: white;
+    width: 35px;
+    height: 3px;
+    transition: 0.2s all ease;
+  }
+  span:nth-child(1) {
+    position: relative;
+    top: 0px;
+  }
+  span:nth-child(2) {
+  }
+  span:nth-child(3) {
+    opacity: 1;
+  }
+}
+
+.hamburgerOpen {
+  transition: 0.2s all ease;
+}
+
+.hamburgerOpen span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 13px;
+  position: relative;
+  transition: 0.2s all ease;
+}
+
+.hamburgerOpen span:nth-child(2) {
+  transform-origin: center;
+  transform: rotate(45deg);
+  transition: 0.2s all ease;
+}
+
+.hamburgerOpen span:nth-child(3) {
+  opacity: 0;
+  transition: 0.2s all ease;
+}
