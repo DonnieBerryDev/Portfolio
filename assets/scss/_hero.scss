@@ -1,57 +1,83 @@
 #hero {
+  height: 100%;
+  position: relative;
+  //   background: #ff0000;
+  //   background-image: #ff0000;
+  //   background-image: radial-gradient(
+  //       at 40% 20%,
+  //       hsla(28, 100%, 74%, 1) 0,
+  //       transparent 50%
+  //     ),
+  //     radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0, transparent 50%),
+  //     radial-gradient(at 0% 50%, hsla(355, 85%, 93%, 1) 0, transparent 50%),
+  //     radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 1) 0, transparent 50%),
+  //     radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0, transparent 50%),
+  //     radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0, transparent 50%),
+  //     radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0, transparent 50%);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1210%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='url(%23SvgjsLinearGradient1211)'%3e%3c/rect%3e%3cpath d='M1920 0L1307.96 0L1920 239.77z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1307.96 0L1920 239.77L1920 591.19L740.25 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M740.25 0L1920 591.19L1920 775.6700000000001L316.15 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M316.1500000000001 0L1920 775.6700000000001L1920 842.74L251.1900000000001 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 1080L53.5 1080L0 877.39z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 877.39L53.5 1080L258.91999999999996 1080L0 636.25z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 636.25L258.91999999999996 1080L347.51 1080L0 543.58z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 543.58L347.51 1080L768.56 1080L0 451.77000000000004z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1210'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='0%25' x2='50%25' y2='100%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1211'%3e%3cstop stop-color='rgba(0%2c 30%2c 71%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 11%2c 26%2c 1)' offset='0.86'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
+  background-position: center;
+  a {
+    text-decoration: none;
+  }
+
+  .container-main {
     height: 100%;
-    position: relative;
+  }
 
-    a {
-        text-decoration: none;
+  .hero {
+    &_wrapper {
+    }
+    &_btn {
+      margin-bottom: 20%;
+      @media only screen and (max-width: 991px) {
+        margin-bottom: 0;
+      }
+    }
+    &_showmore {
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &_arrow {
+        animation: arrowBounce 1s infinite;
+        position: relative;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
-    .container-main {
-        height: 100%;
+    &_inner {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      @media only screen and (max-width: 991px) {
+        justify-content: center;
+      }
     }
 
-    .hero {
-        &_showmore {
-            position: absolute;
-            bottom: 40px;
-            left: 0;
-            right: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            &_arrow {
-                animation: arrowBounce 1s infinite;
-                position: relative;
-            }
-
-            &:hover {
-                cursor: pointer;
-            }
-        }
-
-        &_inner {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        &_intro1 {}
-
-        &_intro2 {
-            padding: rem(35) 0;
-        }
-
-        &_intro3 {
-            max-width: rem(490);
-            margin-bottom: rem(25);
-
-            @media only screen and (max-width: 840px) {
-                max-width: 100%;
-            }
-        }
-
+    &_intro1 {
     }
+
+    &_intro2 {
+      padding: rem(35) 0;
+    }
+
+    &_intro3 {
+      max-width: rem(490);
+      margin-bottom: rem(25);
+
+      @media only screen and (max-width: 840px) {
+        max-width: 100%;
+      }
+    }
+  }
 }

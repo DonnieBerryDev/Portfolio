@@ -1,11 +1,11 @@
 footer {
-    width: 100%;
-    padding: rem(30) 0;
-    border-top: 1px solid $clr-light;
-
-    .footer_text {
-        p {
-            text-align: center;
-        }
+  width: 100%;
+  padding: rem(30) 0;
+  border-top: 1px solid rgb(233, 233, 233);
+  background: white;
+  .footer_text {
+    p {
+      text-align: center;
     }
+  }
 }

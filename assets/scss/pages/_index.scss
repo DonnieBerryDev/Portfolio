@@ -17,11 +17,24 @@
 
     &_text {
       width: 64%;
-
+      position: relative;
       @media only screen and (max-width: 840px) {
         order: 2;
         width: 100%;
         text-align: center;
+      }
+
+      .dots {
+        position: absolute;
+        left: 0;
+        min-width: 50%;
+        bottom: rem(-40);
+        opacity: 0.02;
+        left: rem(-70);
+        img {
+          max-width: 100%;
+          height: auto;
+        }
       }
     }
 
@@ -42,6 +55,9 @@
       img {
         max-width: 100%;
         height: auto;
+        border-radius: 100%;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
       }
     }
   }
@@ -80,19 +96,30 @@
 }
 
 #projects {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1104%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(0%2c 11%2c 26%2c 1)'%3e%3c/rect%3e%3cpath d='M1512 560L0 560 L0 283.53Q-18.36 193.17%2c 72 174.8Q194.94 177.74%2c 192 300.68Q203.95 192.63%2c 312 204.58Q339.42 160%2c 384 187.42Q435.34 166.76%2c 456 218.1Q500.6 190.7%2c 528 235.3Q599.11 234.41%2c 600 305.52Q635.82 221.34%2c 720 257.16Q797.57 214.73%2c 840 292.29Q868.56 200.85%2c 960 229.41Q978.61 176.02%2c 1032 194.63Q1115.78 158.41%2c 1152 242.18Q1225.72 195.91%2c 1272 269.63Q1325.02 202.65%2c 1392 255.67Q1428.26 171.93%2c 1512 208.18z' fill='rgba(6%2c 22%2c 43%2c 1)'%3e%3c/path%3e%3cpath d='M1464 560L0 560 L0 328.72Q19.25 275.97%2c 72 295.21Q159.7 262.91%2c 192 350.61Q246.47 285.08%2c 312 339.54Q384.13 291.68%2c 432 363.81Q440.88 300.69%2c 504 309.58Q547.03 280.61%2c 576 323.64Q614.32 241.96%2c 696 280.28Q786.44 250.72%2c 816 341.16Q833.09 286.25%2c 888 303.34Q910.24 253.58%2c 960 275.82Q1015.1 258.92%2c 1032 314.02Q1078.03 240.05%2c 1152 286.08Q1246.04 260.12%2c 1272 354.15Q1345.48 307.63%2c 1392 381.11Q1438 355.11%2c 1464 401.11z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 444.18Q-1.39 370.79%2c 72 369.4Q148.39 325.79%2c 192 402.18Q241.21 379.39%2c 264 428.6Q323.53 416.13%2c 336 475.67Q348.79 368.46%2c 456 381.24Q486.32 339.56%2c 528 369.89Q578.79 348.68%2c 600 399.47Q708.51 387.98%2c 720 496.49Q736.51 393%2c 840 409.52Q857.06 354.58%2c 912 371.64Q982.38 322.02%2c 1032 392.41Q1091.54 379.95%2c 1104 439.48Q1124.75 388.23%2c 1176 408.97Q1192.92 353.89%2c 1248 370.82Q1332.19 335.01%2c 1368 419.21Q1436.2 367.41%2c 1488 435.61z' fill='%23356cb1'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 531.74Q36.75 448.49%2c 120 485.24Q148.29 441.53%2c 192 469.83Q298.54 456.37%2c 312 562.9Q324.29 503.19%2c 384 515.49Q453.18 464.67%2c 504 533.86Q593.06 502.92%2c 624 591.99Q637.1 533.09%2c 696 546.18Q703.71 481.89%2c 768 489.6Q853.94 503.54%2c 840 589.48Q815.95 493.43%2c 912 469.38Q999.49 436.87%2c 1032 524.36Q1055.08 475.44%2c 1104 498.52Q1151.55 426.07%2c 1224 473.62Q1279.13 456.75%2c 1296 511.88Q1372.21 468.09%2c 1416 544.3Q1475.09 531.38%2c 1488 590.47z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1104'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: rem(250);
+  margin-bottom: -1px;
+  @media only screen and (max-width: 450px) {
+    padding-bottom: rem(150);
+  }
   .projects {
     &_header {
       margin-bottom: $section-spacing;
     }
   }
 
-  .project {
+  .project:not(:last-child) {
     margin-bottom: rem(200);
 
     @media only screen and (max-width: 840px) {
       margin-bottom: rem(100);
     }
+  }
 
+  .project {
     .flex {
       @media only screen and (max-width: 840px) {
         flex-direction: column;
@@ -317,7 +344,8 @@
 
 #contact {
   padding-bottom: rem(100);
-
+  padding-top: rem(50);
+  background: #fff;
   .contact {
     &_header {
       margin-bottom: $section-spacing;

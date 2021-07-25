@@ -1,140 +1,131 @@
 .hamburgerBar {
-    position: fixed;
-    top: 0;
-    background: $clr-main;
-    display: flex;
-    justify-content: flex-end;
-    padding: rem(10);
-    width: 100%;
-    z-index: 998;
-    box-shadow: 0 0.6px 1px rgba(0, 0, 0, 0.028),
-        0 1.5px 2.4px rgba(0, 0, 0, 0.04),
-        0 2.9px 4.5px rgba(0, 0, 0, 0.05),
-        0 5.1px 8px rgba(0, 0, 0, 0.06),
-        0 9.6px 15px rgba(0, 0, 0, 0.072),
-        0 23px 36px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  background: $clr-main;
+  display: flex;
+  justify-content: flex-end;
+  padding: rem(10);
+  width: 100%;
+  z-index: 998;
+  box-shadow: 0 0.6px 1px rgba(0, 0, 0, 0.028),
+    0 1.5px 2.4px rgba(0, 0, 0, 0.04), 0 2.9px 4.5px rgba(0, 0, 0, 0.05),
+    0 5.1px 8px rgba(0, 0, 0, 0.06), 0 9.6px 15px rgba(0, 0, 0, 0.072),
+    0 23px 36px rgba(0, 0, 0, 0.1);
 
-    @media only screen and (min-width: 600px) {
-        display: none;
-    }
+  @media only screen and (min-width: 600px) {
+    display: none;
+  }
 }
 
 #hamburger {
-    position: relative;
-    z-index: 999;
-    display: block;
+  position: relative;
+  z-index: 999;
+  display: block;
 
-
-
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .nav-open {
-    left: 0vw !important;
-    transition: 0.3s all ease !important;
+  left: 0vw !important;
+  transition: 0.3s all ease !important;
 }
 
 nav {
-    padding: rem(25) 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: $clr-main;
-    background-image: url(./../assets/images/classy-fabric.png);
-    transition: 0.2s all ease;
-    z-index: 10;
-    box-shadow: none;
-    transition: 0.3s all ease;
+  padding: rem(25) 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  // background: $clr-main;
+  // background-image: url(./../assets/images/classy-fabric.png);
+  transition: 0.2s all ease;
+  z-index: 10;
+  box-shadow: none;
+  transition: 0.3s all ease;
 
+  @media only screen and (max-width: 600px) {
+    left: -150vw;
+  }
+
+  .container-main {
     @media only screen and (max-width: 600px) {
-        left: -150vw;
-    }
-
-    .container-main {
-        @media only screen and (max-width: 600px) {
-            height: 100%;
-            display: flex;
-            justify-content: flex-end;
-            flex-direction: column;
-        }
-
-        .nav_links {
-            @media only screen and (max-width: 600px) {
-                height: 90%;
-                justify-content: flex-end;
-            }
-
-            .mainNav {
-                @media only screen and (max-width: 600px) {
-                    height: 100%;
-                }
-            }
-        }
-    }
-
-    @media only screen and (max-width: 600px) {
-        height: 100%;
-        background: $clr-main;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
     }
 
     .nav_links {
-        .mainNav {
-            display: flex;
-            list-style: none;
-            justify-content: flex-end;
+      @media only screen and (max-width: 600px) {
+        height: 90%;
+        justify-content: flex-end;
+      }
 
-            @media only screen and (max-width: 600px) {
-                height: 100%;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-
-            li {
-                @media only screen and (max-width: 600px) {
-                    height: 100%;
-
-                    &:not(:last-child) {
-                        border-bottom: 0.5px solid lighten($clr-main, 10%);
-                    }
-                }
-
-                a {
-                    margin-left: rem(50);
-                    color: $clr-white;
-                    text-decoration: none;
-
-                    @media only screen and (max-width: 600px) {
-                        height: 100%;
-                        display: block;
-                        width: 100%;
-                        margin-left: 0;
-                        font-size: 10vw;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-
-
-                    }
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
+      .mainNav {
+        @media only screen and (max-width: 600px) {
+          height: 100%;
         }
+      }
     }
+  }
+
+  @media only screen and (max-width: 600px) {
+    height: 100%;
+    background: $clr-main;
+  }
+
+  .nav_links {
+    .mainNav {
+      display: flex;
+      list-style: none;
+      justify-content: flex-end;
+
+      @media only screen and (max-width: 600px) {
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      li {
+        @media only screen and (max-width: 600px) {
+          height: 100%;
+
+          &:not(:last-child) {
+            border-bottom: 0.5px solid lighten($clr-main, 10%);
+          }
+        }
+
+        a {
+          margin-left: rem(50);
+          color: $clr-white;
+          text-decoration: none;
+
+          @media only screen and (max-width: 600px) {
+            height: 100%;
+            display: block;
+            width: 100%;
+            margin-left: 0;
+            font-size: 10vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
 }
 
-
 .active-nav {
-    background: darken($clr-main, 1%) !important;
-    transition: 0.2s all ease !important;
-    box-shadow: 0 0.6px 1px rgba(0, 0, 0, 0.028),
-        0 1.5px 2.4px rgba(0, 0, 0, 0.04),
-        0 2.9px 4.5px rgba(0, 0, 0, 0.05),
-        0 5.1px 8px rgba(0, 0, 0, 0.06),
-        0 9.6px 15px rgba(0, 0, 0, 0.072),
-        0 23px 36px rgba(0, 0, 0, 0.1);
+  background: darken($clr-main, 1%) !important;
+  transition: 0.2s all ease !important;
+  box-shadow: 0 0.6px 1px rgba(0, 0, 0, 0.028),
+    0 1.5px 2.4px rgba(0, 0, 0, 0.04), 0 2.9px 4.5px rgba(0, 0, 0, 0.05),
+    0 5.1px 8px rgba(0, 0, 0, 0.06), 0 9.6px 15px rgba(0, 0, 0, 0.072),
+    0 23px 36px rgba(0, 0, 0, 0.1);
 }

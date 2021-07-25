@@ -1,56 +1,65 @@
 .aboutme_text {
-    ul {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        padding: rem(15) 0;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: rem(15) 0;
 
-        li {
-            width: 50%;
-            color: $clr-white;
-            position: relative;
-            padding-left: rem(25);
-            font-size: rem(16);
+    li {
+      width: 50%;
+      color: $clr-white;
+      position: relative;
+      padding-left: rem(25);
+      font-size: rem(16);
 
-            &::before {
-                content: url(../../assets/images/arrow_right.png);
-                position: absolute;
-                left: 0;
+      &::before {
+        content: url(../../assets/images/arrow_right.png);
+        position: absolute;
+        left: 0;
 
-                @media only screen and (max-width: 840px) {
-                    content: ''
-                }
-            }
+        @media only screen and (max-width: 840px) {
+          content: "";
         }
+      }
     }
+  }
 }
 
 .project {
-    &:nth-child(even) {
-        ul {
-            justify-content: flex-start;
-
-            @media only screen and (max-width: 840px) {
-                justify-content: center;
-            }
-        }
-    }
-
+  &:nth-child(even) {
     ul {
-        list-style: none;
-        display: flex;
-        justify-content: flex-end;
-        flex-wrap: wrap;
+      justify-content: flex-start;
 
-        @media only screen and (max-width: 840px) {
-            justify-content: center;
-        }
-
-        li {
-            color: $clr-white;
-            margin-right: rem(25);
-            font-size: rem(16);
-            opacity: 0.35;
-        }
+      @media only screen and (max-width: 840px) {
+        justify-content: center;
+      }
     }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: rem(20);
+    @media only screen and (max-width: 840px) {
+      justify-content: flex-start !important;
+      flex-wrap: wrap;
+    }
+
+    li {
+      color: $clr-white;
+      font-size: rem(16);
+      opacity: 0.35;
+      @media only screen and (max-width: 840px) {
+        gap: 20px;
+      }
+    }
+    li:not(:last-child) {
+      margin-right: rem(25);
+      @media only screen and (max-width: 840px) {
+        margin-right: 0;
+      }
+    }
+  }
 }

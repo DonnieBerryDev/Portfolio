@@ -9,7 +9,7 @@ const navLinks = document.querySelectorAll("nav a");
 const showMore = document.querySelector(".hero_showmore");
 const doc = document.querySelector("html");
 function scrollEvent() {
-  if (window.scrollY > 0) {
+  if (window.scrollY > 300) {
     nav.classList.add("active-nav");
     showMore.classList.add("fadeOutHide");
     console.log(showMore);
