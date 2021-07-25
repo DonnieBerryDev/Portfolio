@@ -29,8 +29,11 @@
         left: 0;
         min-width: 50%;
         bottom: rem(-40);
-        opacity: 0.02;
+        opacity: 0.05;
         left: rem(-70);
+        @media only screen and (max-width: 1055px) {
+          display: none;
+        }
         img {
           max-width: 100%;
           height: auto;
@@ -186,10 +189,20 @@
           margin-left: 0;
           margin-right: rem(-60);
           text-align: right;
+          a h2 {
+            transition: 0.2s all ease;
+            &:hover {
+              transition: 0.2s all ease;
+              color: $clr-light-hl;
+            }
+          }
 
           @media only screen and (max-width: 1220px) {
             margin-right: 0;
             text-align: left;
+          }
+          a {
+            text-decoration: none;
           }
         }
 
@@ -279,7 +292,16 @@
       &_header {
         margin-left: rem(-60);
         margin-bottom: rem(15);
-
+        a {
+          text-decoration: none;
+        }
+        a h2 {
+          transition: 0.2s all ease;
+          &:hover {
+            transition: 0.2s all ease;
+            color: $clr-light-hl;
+          }
+        }
         @media only screen and (max-width: 1220px) {
           margin-left: 0;
           margin-bottom: rem(30);

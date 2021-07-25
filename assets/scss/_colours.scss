@@ -1,17 +1,18 @@
 // $clr-main:#020202;
-$clr-main:#000B1A;
+$clr-main: #000b1a;
 // $clr-light:#5F5F91;
 $clr-light: lighten(desaturate($clr-main, 80), 40);
+$clr-light-hl: lighten(saturate($clr-light, 24.06), 26.86);
 $clr-white: #fff;
 
 .clr-main {
-    color: $clr-main;
+  color: $clr-main;
 }
 
 .clr-light {
-    color: $clr-light;
+  color: $clr-light;
 }
 
 .clr-white {
-    color: $clr-white;
+  color: $clr-white;
 }

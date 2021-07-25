@@ -9,6 +9,7 @@
   font-size: rem(14);
   font-weight: 500;
   letter-spacing: 1.6px;
+  transition: 0.3s all ease;
   @media only screen and (max-width: 420px) {
     padding: rem(10) rem(30);
   }
