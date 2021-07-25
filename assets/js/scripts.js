@@ -14,7 +14,6 @@ function scrollEvent() {
     nav.classList.add("active-nav");
     showMore.classList.add("fadeOutHide");
     hamburgerBar.classList.add("hamurgerActive");
-    console.log(showMore);
   } else {
     nav.classList.remove("active-nav");
     hamburgerBar.classList.remove("hamurgerActive");
