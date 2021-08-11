@@ -58,7 +58,8 @@
       }
     }
     li:not(:last-child) {
-      margin-right: rem(25);
+      // margin-right: rem(25);
+      min-width: rem(50);
       @media only screen and (max-width: 840px) {
         margin-right: 0;
       }
